@@ -357,7 +357,7 @@ void dump_UEnum(ULONG64 uobject_addr)
 	if (Max > 256)
 		Type = "uint32_t";
 
-	enum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "\n};\n\n");
+	enum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "};\n\n");
 }
 
 void dump_objects()
