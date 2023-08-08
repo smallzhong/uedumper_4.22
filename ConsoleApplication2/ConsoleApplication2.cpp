@@ -251,20 +251,90 @@ string get_object_fullName(ULONG64 uobject_addr)
 	return get_object_name(get_object_class(uobject_addr)) + "\t" + temp;
 }
 
+bool IsA_UObject(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_UObject_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+bool IsA_AActor(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_AActor_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+bool IsA_UEnum(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_UEnum_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+bool IsA_UClass(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_UClass_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+bool IsA_UFunction(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_UFunction_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+bool IsA_UScriptStruct(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
+{
+	ULONG64 cmp = get_UScriptStruct_staticClass(TUObjectArray_addr);
+	MY_ASSERT(cmp);
+
+	for (ULONG64 super = get_object_class(uobject_addr); super; super = get_struct_super(super))
+	{
+		if (super == cmp)
+			return TRUE;
+	}
+
+	return FALSE;
+}
+
 void dump_objects()
 {
 	File objects("objects.txt");
 
 	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
-
-	cout << get_UObject_staticClass(TUObjectArray_addr) << endl;
-	cout << get_AActor_staticClass(TUObjectArray_addr) << endl;
-	cout << get_UEnum_staticClass(TUObjectArray_addr) << endl;
-	cout << get_UClass_staticClass(TUObjectArray_addr) << endl;
-	cout << get_UFunction_staticClass(TUObjectArray_addr) << endl;
-	cout << get_UScriptStruct_staticClass(TUObjectArray_addr) << endl;
-
-	return;
 
 	for (int i = 0; i < get_object_num_elememts(); i++)
 	{
@@ -272,11 +342,31 @@ void dump_objects()
 		if (!cur_uobject_addr)
 			continue;
 
+		if (IsA_UEnum(TUObjectArray_addr, cur_uobject_addr))
+		{
+			objects.fprintf("IsA_UEnum\n");
+		}
+		else if (IsA_UClass(TUObjectArray_addr, cur_uobject_addr))
+		{
+			objects.fprintf("IsA_UClass\n");
 
+		}
+		else if (IsA_UFunction(TUObjectArray_addr, cur_uobject_addr))
+		{
+			objects.fprintf("IsA_UFunction\n");
+
+		}
+		else if (IsA_UScriptStruct(TUObjectArray_addr, cur_uobject_addr))
+		{
+			objects.fprintf("IsA_UScriptStruct\n");
+		}
 
 
 
 		string name = get_object_fullName(cur_uobject_addr);
+
+
+
 		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, name.c_str());
 	}
 }
@@ -285,9 +375,6 @@ void 测试()
 {
 	init();
 	dump_objects();
-
-	
-
 }
 
 int main()

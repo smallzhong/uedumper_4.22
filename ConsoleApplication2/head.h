@@ -74,3 +74,10 @@ ULONG64 get_UEnum_staticClass(ULONG64 TUObjectArray_addr);
 ULONG64 get_UClass_staticClass(ULONG64 TUObjectArray_addr);
 ULONG64 get_UFunction_staticClass(ULONG64 TUObjectArray_addr);
 ULONG64 get_UScriptStruct_staticClass(ULONG64 TUObjectArray_addr);
+
+bool IsA_UObject(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
+bool IsA_AActor(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
+bool IsA_UEnum(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
+bool IsA_UClass(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
+bool IsA_UFunction(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
+bool IsA_UScriptStruct(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr);
