@@ -2,6 +2,7 @@
 //
 
 #include "head.h"
+#include "file.h"
 
 const ULONG64 g_base = 0x7FF616AC0000;
 const ULONG64 g_gname_offset = 0x2E6E0C0;
@@ -137,9 +138,9 @@ string get_object_fullname(ULONG64 uobject_addr)
 	return get_name(NameId);
 }
 
-void 测试()
+void dump_objects()
 {
-	init();
+	File objects("objects.txt");
 
 	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
 	for (int i = 0; i < get_num_elememts(); i++)
@@ -147,8 +148,19 @@ void 测试()
 		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
 		if (!cur_uobject_addr)
 			continue;
-		cout << get_object_fullname(cur_uobject_addr) << endl;
+		string fullName = get_object_fullname(cur_uobject_addr);
+		objects.fprintf("[%d] %s\n", i, fullName.c_str());
+		objects.fflush();
+		break;
 	}
+}
+
+void 测试()
+{
+	init();
+	dump_objects();
+
+
 
 }
 
