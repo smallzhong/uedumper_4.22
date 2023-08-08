@@ -332,7 +332,14 @@ File enum_logger("enum.txt");
 void dump_UEnum(ULONG64 uobject_addr)
 {
 	string FullName = "// " + get_object_fullName(uobject_addr) + "\n";
-	enum_logger.fprintf("%s\n", FullName.c_str());
+	string ClassName = "enum class " + get_object_name(uobject_addr) + " : ";
+	string Type = "uint8_t";
+	string Body = "";
+
+	//if (Max > 256)
+	//	Type = "uint32_t";
+
+	enum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "\n};\n\n");
 }
 
 void dump_objects()

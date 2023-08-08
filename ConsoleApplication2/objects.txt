@@ -3793,12 +3793,9 @@ IsA_UClass
 [00000017c49e13b10] Package	/Script/EngineMessages
 [00000017c49e13ba0] Package	/Script/Serialization
 [00000017c49e13c30] Package	/Script/SessionMessages
-IsA_UEnum
 [00000017c49e13cc0] Enum	/Script/OnlineSubsystem.EInAppPurchaseState
 [00000017c49e13d20] Field	/Script/CoreUObject.Default__Field
-IsA_UEnum
 [00000017c49e13d50] Enum	/Script/CoreUObject.Default__Enum
-IsA_UEnum
 [00000017c49e13db0] Enum	/Script/OnlineSubsystem.EMPMatchOutcome
 IsA_UFunction
 [00000017c49e13e10] DelegateFunction	/Script/OnlineSubsystemUtils.AchievementWriteDelegate__DelegateSignature
@@ -3878,53 +3875,30 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e15e80] DelegateFunction	/Script/OnlineSubsystemUtils.OnlineShowLoginUIResult__DelegateSignature
 [00000017c49e15f50] ObjectProperty	/Script/OnlineSubsystemUtils.OnlineShowLoginUIResult__DelegateSignature.PlayerController
-IsA_UEnum
 [00000017c49e15fd0] Enum	/Script/OnlineSubsystemUtils.EBeaconConnectionState
-IsA_UEnum
 [00000017c49e16030] Enum	/Script/OnlineSubsystemUtils.EClientRequestType
-IsA_UEnum
 [00000017c49e16090] Enum	/Script/OnlineSubsystemUtils.EPartyReservationResult
 IsA_UFunction
 [00000017c49e160f0] DelegateFunction	/Script/Paper2D.FlipbookFinishedPlaySignature__DelegateSignature
-IsA_UEnum
 [00000017c49e161c0] Enum	/Script/Paper2D.EFlipbookCollisionMode
-IsA_UEnum
 [00000017c49e16220] Enum	/Script/Paper2D.EPaperSpriteAtlasPadding
-IsA_UEnum
 [00000017c49e16280] Enum	/Script/Paper2D.ETileMapProjectionMode
-IsA_UEnum
 [00000017c49e162e0] Enum	/Script/Paper2D.ESpritePivotMode
-IsA_UEnum
 [00000017c49e16340] Enum	/Script/Paper2D.ESpritePolygonMode
-IsA_UEnum
 [00000017c49e163a0] Enum	/Script/Paper2D.ESpriteShapeType
-IsA_UEnum
 [00000017c49e16400] Enum	/Script/Paper2D.ESpriteCollisionMode
-IsA_UEnum
 [00000017c49e16460] Enum	/Script/DatasmithContent.EDatasmithAreaLightActorType
-IsA_UEnum
 [00000017c49e164c0] Enum	/Script/DatasmithContent.EDatasmithAreaLightActorShape
-IsA_UEnum
 [00000017c49e16520] Enum	/Script/DatasmithContent.EVREDDataTableType
-IsA_UEnum
 [00000017c49e16580] Enum	/Script/DatasmithContent.EDatasmithCADStitchingTechnique
-IsA_UEnum
 [00000017c49e165e0] Enum	/Script/DatasmithContent.EDatasmithImportHierarchy
-IsA_UEnum
 [00000017c49e16640] Enum	/Script/DatasmithContent.EDatasmithImportScene
-IsA_UEnum
 [00000017c49e166a0] Enum	/Script/DatasmithContent.EDatasmithImportLightmapMax
-IsA_UEnum
 [00000017c49e16700] Enum	/Script/DatasmithContent.EDatasmithImportLightmapMin
-IsA_UEnum
 [00000017c49e16760] Enum	/Script/DatasmithContent.EDatasmithImportMaterialQuality
-IsA_UEnum
 [00000017c49e167c0] Enum	/Script/DatasmithContent.EDatasmithImportActorPolicy
-IsA_UEnum
 [00000017c49e16820] Enum	/Script/DatasmithContent.EDatasmithImportAssetConflictPolicy
-IsA_UEnum
 [00000017c49e16880] Enum	/Script/DatasmithContent.EDatasmithImportSearchPackagePolicy
-IsA_UEnum
 [00000017c49e168e0] Enum	/Script/VariantManagerContent.EPropertyValueCategory
 IsA_UFunction
 [00000017c49e16940] DelegateFunction	/Script/AppleImageUtils.AppleImageConversionDelegate__DelegateSignature
@@ -3934,9 +3908,7 @@ IsA_UScriptStruct
 [00000017c49e16b40] ArrayProperty	/Script/AppleImageUtils.AppleImageUtilsImageConversionResult.ImageData
 [00000017c49e16bc0] ByteProperty	/Script/AppleImageUtils.AppleImageUtilsImageConversionResult.ImageData.ImageData
 [00000017c49e16c40] StrProperty	/Script/AppleImageUtils.AppleImageUtilsImageConversionResult.Error
-IsA_UEnum
 [00000017c49e16cb0] Enum	/Script/AppleImageUtils.EAppleTextureType
-IsA_UEnum
 [00000017c49e16d10] Enum	/Script/AppleImageUtils.ETextureRotationDirection
 IsA_UFunction
 [00000017c49e16d70] DelegateFunction	/Script/AppleVision.AppleVisionDetectFacesDelegate__DelegateSignature
@@ -4070,7 +4042,6 @@ IsA_UScriptStruct
 IsA_UScriptStruct
 [00000017c49e1a360] ScriptStruct	/Script/CoreUObject.InterpCurvePointFloat
 [00000017c49e1a410] ByteProperty	/Script/CoreUObject.InterpCurvePointFloat.InterpMode
-IsA_UEnum
 [00000017c49e1a490] Enum	/Script/CoreUObject.EInterpCurveMode
 [00000017c49e1a4f0] FloatProperty	/Script/CoreUObject.InterpCurvePointFloat.LeaveTangent
 [00000017c49e1a560] FloatProperty	/Script/CoreUObject.InterpCurvePointFloat.ArriveTangent
@@ -4201,7 +4172,6 @@ IsA_UScriptStruct
 [00000017c49e1d9d0] ScriptStruct	/Script/CoreUObject.FloatRangeBound
 [00000017c49e1da80] FloatProperty	/Script/CoreUObject.FloatRangeBound.Value
 [00000017c49e1daf0] ByteProperty	/Script/CoreUObject.FloatRangeBound.Type
-IsA_UEnum
 [00000017c49e1db70] Enum	/Script/CoreUObject.ERangeBoundTypes
 IsA_UScriptStruct
 [00000017c49e1dbd0] ScriptStruct	/Script/CoreUObject.FloatRange
@@ -4237,7 +4207,6 @@ IsA_UScriptStruct
 [00000017c49e1e900] StrProperty	/Script/CoreUObject.PolyglotTextData.Namespace
 [00000017c49e1e970] StrProperty	/Script/CoreUObject.PolyglotTextData.NativeCulture
 [00000017c49e1e9e0] EnumProperty	/Script/CoreUObject.PolyglotTextData.Category
-IsA_UEnum
 [00000017c49e1ea60] Enum	/Script/CoreUObject.ELocalizedTextSourceCategory
 [00000017c49e1eac0] EnumProperty	/Script/CoreUObject.Default__EnumProperty
 [00000017c49e1eb40] ByteProperty	/Script/CoreUObject.PolyglotTextData.Category.UnderlyingType
@@ -4247,7 +4216,6 @@ IsA_UScriptStruct
 [00000017c49e1ecf0] StrProperty	/Script/CoreUObject.AutomationEvent.Context
 [00000017c49e1ed60] StrProperty	/Script/CoreUObject.AutomationEvent.Message
 [00000017c49e1edd0] EnumProperty	/Script/CoreUObject.AutomationEvent.Type
-IsA_UEnum
 [00000017c49e1ee50] Enum	/Script/CoreUObject.EAutomationEventType
 [00000017c49e1eeb0] ByteProperty	/Script/CoreUObject.AutomationEvent.Type.UnderlyingType
 IsA_UScriptStruct
@@ -4263,7 +4231,6 @@ IsA_UScriptStruct
 IsA_UScriptStruct
 [00000017c49e1f370] ScriptStruct	/Script/AppleVision.DetectedFaceFeatureRegion
 [00000017c49e1f420] EnumProperty	/Script/AppleVision.DetectedFaceFeatureRegion.FeatureType
-IsA_UEnum
 [00000017c49e1f4a0] Enum	/Script/AppleVision.EDetectedFaceFeatureType
 [00000017c49e1f500] ByteProperty	/Script/AppleVision.DetectedFaceFeatureRegion.FeatureType.UnderlyingType
 [00000017c49e1f580] ArrayProperty	/Script/AppleVision.DetectedFace.Features
@@ -4276,19 +4243,12 @@ IsA_UScriptStruct
 [00000017c49e1f860] EnumProperty	/Script/AppleVision.DetectedFaceFeature2D.FeatureType
 [00000017c49e1f8e0] ByteProperty	/Script/AppleVision.DetectedFaceFeature2D.FeatureType.UnderlyingType
 [00000017c49e1f960] StructProperty	/Script/AppleVision.DetectedFace.BoundingBox
-IsA_UEnum
 [00000017c49e1f9e0] Enum	/Script/ActorSequence.EActorSequenceObjectReferenceType
-IsA_UEnum
 [00000017c49e1fa40] Enum	/Script/EditableMesh.ETriangleTessellationMode
-IsA_UEnum
 [00000017c49e1faa0] Enum	/Script/EditableMesh.EInsetPolygonsMode
-IsA_UEnum
 [00000017c49e1fb00] Enum	/Script/EditableMesh.EPolygonEdgeHardness
-IsA_UEnum
 [00000017c49e1fb60] Enum	/Script/EditableMesh.EMeshElementAttributeType
-IsA_UEnum
 [00000017c49e1fbc0] Enum	/Script/EditableMesh.EMeshTopologyChange
-IsA_UEnum
 [00000017c49e1fc20] Enum	/Script/EditableMesh.EMeshModificationType
 IsA_UFunction
 [00000017c49e1fc80] DelegateFunction	/Script/LocationServicesBPLibrary.LocationServicesData_OnLocationChanged__DelegateSignature
@@ -4301,33 +4261,19 @@ IsA_UScriptStruct
 [00000017c49e1ffd0] FloatProperty	/Script/LocationServicesBPLibrary.LocationServicesData.Latitude
 [00000017c49e20040] FloatProperty	/Script/LocationServicesBPLibrary.LocationServicesData.Longitude
 [00000017c49e200b0] FloatProperty	/Script/LocationServicesBPLibrary.LocationServicesData.Timestamp
-IsA_UEnum
 [00000017c49e20120] Enum	/Script/LocationServicesBPLibrary.ELocationAccuracy
-IsA_UEnum
 [00000017c49e20180] Enum	/Script/OculusHMD.EBoundaryType
-IsA_UEnum
 [00000017c49e201e0] Enum	/Script/OculusHMD.ETiledMultiResLevel
-IsA_UEnum
 [00000017c49e20240] Enum	/Script/OculusHMD.ETrackedDeviceType
-IsA_UEnum
 [00000017c49e202a0] Enum	/Script/OculusMR.EOculusMR_BoundaryType
-IsA_UEnum
 [00000017c49e20300] Enum	/Script/OculusMR.EOculusMR_CompositionMethod
-IsA_UEnum
 [00000017c49e20360] Enum	/Script/OculusMR.EOculusMR_DepthQuality
-IsA_UEnum
 [00000017c49e203c0] Enum	/Script/OculusMR.EOculusMR_PostProcessEffects
-IsA_UEnum
 [00000017c49e20420] Enum	/Script/OculusMR.EOculusMR_VirtualGreenScreenType
-IsA_UEnum
 [00000017c49e20480] Enum	/Script/OculusMR.EOculusMR_ClippingReference
-IsA_UEnum
 [00000017c49e204e0] Enum	/Script/OculusMR.EOculusMR_CameraDeviceEnum
-IsA_UEnum
 [00000017c49e20540] Enum	/Script/ProceduralMeshComponent.EProcMeshSliceCapOption
-IsA_UEnum
 [00000017c49e205a0] Enum	/Script/PhysXVehicles.EWheelSweepType
-IsA_UEnum
 [00000017c49e20600] Enum	/Script/PhysXVehicles.EVehicleDifferential4W
 IsA_UFunction
 [00000017c49e20660] Function	/Script/CoreUObject.Object.ExecuteUbergraph
@@ -4366,14 +4312,12 @@ IsA_UScriptStruct
 IsA_UScriptStruct
 [00000017c49e21480] ScriptStruct	/Script/Engine.FormatArgumentData
 [00000017c49e21530] EnumProperty	/Script/Engine.FormatArgumentData.ArgumentValueGender
-IsA_UEnum
 [00000017c49e215b0] Enum	/Script/Engine.ETextGender
 [00000017c49e21610] ByteProperty	/Script/Engine.FormatArgumentData.ArgumentValueGender.UnderlyingType
 [00000017c49e21690] FloatProperty	/Script/Engine.FormatArgumentData.ArgumentValueFloat
 [00000017c49e21700] IntProperty	/Script/Engine.FormatArgumentData.ArgumentValueInt
 [00000017c49e21770] TextProperty	/Script/Engine.FormatArgumentData.ArgumentValue
 [00000017c49e217e0] ByteProperty	/Script/Engine.FormatArgumentData.ArgumentValueType
-IsA_UEnum
 [00000017c49e21860] Enum	/Script/Engine.EFormatArgumentType
 [00000017c49e218c0] StrProperty	/Script/Engine.FormatArgumentData.ArgumentName
 IsA_UScriptStruct
@@ -4500,7 +4444,6 @@ IsA_UFunction
 [00000017c49e24d70] DelegateFunction	/Script/Engine.ActorOnInputTouchBeginSignature__DelegateSignature
 [00000017c49e24e40] ObjectProperty	/Script/Engine.ActorOnInputTouchBeginSignature__DelegateSignature.TouchedActor
 [00000017c49e24ec0] ByteProperty	/Script/Engine.ActorOnInputTouchBeginSignature__DelegateSignature.FingerIndex
-IsA_UEnum
 [00000017c49e24f40] Enum	/Script/InputCore.ETouchIndex
 IsA_UFunction
 [00000017c49e24fa0] DelegateFunction	/Script/Engine.ActorOnInputTouchEndSignature__DelegateSignature
@@ -4520,7 +4463,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e25660] DelegateFunction	/Script/Engine.ActorEndPlaySignature__DelegateSignature
 [00000017c49e25730] ByteProperty	/Script/Engine.ActorEndPlaySignature__DelegateSignature.EndPlayReason
-IsA_UEnum
 [00000017c49e257b0] Enum	/Script/Engine.EEndPlayReason
 [00000017c49e25810] ObjectProperty	/Script/Engine.ActorEndPlaySignature__DelegateSignature.Actor
 IsA_UFunction
@@ -4681,7 +4623,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e29cc0] Function	/Script/Engine.ActorComponent.SetTickGroup
 [00000017c49e29d90] ByteProperty	/Script/Engine.ActorComponent.SetTickGroup.NewTickGroup
-IsA_UEnum
 [00000017c49e29e10] Enum	/Script/Engine.ETickingGroup
 IsA_UFunction
 [00000017c49e29e70] Function	/Script/Engine.ActorComponent.ToggleActive
@@ -4696,7 +4637,6 @@ IsA_UScriptStruct
 [00000017c49e2a2f0] NameProperty	/Script/Engine.SimpleMemberReference.MemberName
 [00000017c49e2a360] ObjectProperty	/Script/Engine.SimpleMemberReference.MemberParent
 [00000017c49e2a3e0] EnumProperty	/Script/Engine.ActorComponent.CreationMethod
-IsA_UEnum
 [00000017c49e2a460] Enum	/Script/Engine.EComponentCreationMethod
 [00000017c49e2a4c0] ByteProperty	/Script/Engine.ActorComponent.CreationMethod.UnderlyingType
 [00000017c49e2a540] BoolProperty	/Script/Engine.ActorComponent.bIsEditorOnly
@@ -4730,7 +4670,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e2b250] DelegateFunction	/Script/Engine.ApplicationLifecycleComponent.OnTemperatureChangeDelegate__DelegateSignature
 [00000017c49e2b320] EnumProperty	/Script/Engine.ApplicationLifecycleComponent.OnTemperatureChangeDelegate__DelegateSignature.Severity
-IsA_UEnum
 [00000017c49e2b3a0] Enum	/Script/Engine.ETemperatureSeverityType
 [00000017c49e2b400] ByteProperty	/Script/Engine.ApplicationLifecycleComponent.OnTemperatureChangeDelegate__DelegateSignature.Severity.UnderlyingType
 [00000017c49e2b480] MulticastDelegateProperty	/Script/Engine.ApplicationLifecycleComponent.ApplicationReceivedStartupArgumentsDelegate
@@ -4824,7 +4763,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e2db20] Function	/Script/Engine.MovementComponent.GetPlaneConstraintAxisSetting
 [00000017c49e2dbf0] EnumProperty	/Script/Engine.MovementComponent.GetPlaneConstraintAxisSetting.ReturnValue
-IsA_UEnum
 [00000017c49e2dc70] Enum	/Script/Engine.EPlaneConstraintAxisSetting
 [00000017c49e2dcd0] ByteProperty	/Script/Engine.MovementComponent.GetPlaneConstraintAxisSetting.ReturnValue.UnderlyingType
 IsA_UFunction
@@ -4936,7 +4874,6 @@ IsA_UScriptStruct
 [00000017c49e30d00] MulticastDelegateProperty	/Script/Engine.InterpToMovementComponent.OnInterpToReverse
 [00000017c49e30d80] BoolProperty	/Script/Engine.InterpToMovementComponent.bForceSubStepping
 [00000017c49e30e00] EnumProperty	/Script/Engine.InterpToMovementComponent.BehaviourType
-IsA_UEnum
 [00000017c49e30e80] Enum	/Script/Engine.EInterpToBehaviourType
 [00000017c49e30ee0] ByteProperty	/Script/Engine.InterpToMovementComponent.BehaviourType.UnderlyingType
 [00000017c49e30f60] BoolProperty	/Script/Engine.InterpToMovementComponent.bPauseOnImpact
@@ -4983,7 +4920,6 @@ IsA_UScriptStruct
 [00000017c49e32110] FloatProperty	/Script/Engine.PlatformInterfaceData.FloatValue
 [00000017c49e32180] IntProperty	/Script/Engine.PlatformInterfaceData.IntValue
 [00000017c49e321f0] ByteProperty	/Script/Engine.PlatformInterfaceData.Type
-IsA_UEnum
 [00000017c49e32270] Enum	/Script/Engine.EPlatformInterfaceDataType
 [00000017c49e322d0] NameProperty	/Script/Engine.PlatformInterfaceData.DataName
 [00000017c49e32340] BoolProperty	/Script/Engine.PlatformInterfaceDelegateResult.bSuccessful
@@ -5005,7 +4941,6 @@ IsA_UFunction
 [00000017c49e329c0] DelegateFunction	/Script/Engine.MovementModeChangedSignature__DelegateSignature
 [00000017c49e32a90] ByteProperty	/Script/Engine.MovementModeChangedSignature__DelegateSignature.PreviousCustomMode
 [00000017c49e32b10] ByteProperty	/Script/Engine.MovementModeChangedSignature__DelegateSignature.PrevMovementMode
-IsA_UEnum
 [00000017c49e32b90] Enum	/Script/Engine.EMovementMode
 [00000017c49e32bf0] ObjectProperty	/Script/Engine.MovementModeChangedSignature__DelegateSignature.Character
 IsA_UFunction
@@ -5094,12 +5029,10 @@ IsA_UFunction
 [00000017c49e35130] Function	/Script/Engine.GameInstance.HandleNetworkError
 [00000017c49e35200] BoolProperty	/Script/Engine.GameInstance.HandleNetworkError.bIsServer
 [00000017c49e35280] ByteProperty	/Script/Engine.GameInstance.HandleNetworkError.FailureType
-IsA_UEnum
 [00000017c49e35300] Enum	/Script/Engine.ENetworkFailure
 IsA_UFunction
 [00000017c49e35360] Function	/Script/Engine.GameInstance.HandleTravelError
 [00000017c49e35430] ByteProperty	/Script/Engine.GameInstance.HandleTravelError.FailureType
-IsA_UEnum
 [00000017c49e354b0] Enum	/Script/Engine.ETravelFailure
 IsA_UFunction
 [00000017c49e35510] Function	/Script/Engine.GameInstance.ReceiveInit
@@ -5114,13 +5047,11 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e359b0] DelegateFunction	/Script/Engine.PlatformGameInstance.PlatformScreenOrientationChangedDelegate__DelegateSignature
 [00000017c49e35a80] ByteProperty	/Script/Engine.PlatformGameInstance.PlatformScreenOrientationChangedDelegate__DelegateSignature.inScreenOrientation
-IsA_UEnum
 [00000017c49e35b00] Enum	/Script/Engine.EScreenOrientation
 [00000017c49e35b60] MulticastDelegateProperty	/Script/Engine.PlatformGameInstance.ApplicationReceivedLocalNotificationDelegate
 IsA_UFunction
 [00000017c49e35be0] DelegateFunction	/Script/Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature
 [00000017c49e35cb0] ByteProperty	/Script/Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature.inAppState
-IsA_UEnum
 [00000017c49e35d30] Enum	/Script/Engine.EApplicationState
 [00000017c49e35d90] IntProperty	/Script/Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature.inInt
 [00000017c49e35e00] StrProperty	/Script/Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature.inString
@@ -5185,7 +5116,6 @@ IsA_UFunction
 [00000017c49e378b0] ClassProperty	/Script/CoreUObject.Default__ClassProperty
 [00000017c49e37930] ArrayProperty	/Script/Engine.KismetSystemLibrary.BoxOverlapActors.ObjectTypes
 [00000017c49e379b0] ByteProperty	/Script/Engine.KismetSystemLibrary.BoxOverlapActors.ObjectTypes.ObjectTypes
-IsA_UEnum
 [00000017c49e37a30] Enum	/Script/Engine.EObjectTypeQuery
 [00000017c49e37a90] StructProperty	/Script/Engine.KismetSystemLibrary.BoxOverlapActors.BoxExtent
 [00000017c49e37b10] StructProperty	/Script/Engine.KismetSystemLibrary.BoxOverlapActors.BoxPos
@@ -5213,13 +5143,11 @@ IsA_UFunction
 [00000017c49e385a0] ArrayProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.OutHits
 [00000017c49e38620] StructProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.OutHits.OutHits
 [00000017c49e386a0] ByteProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.DrawDebugType
-IsA_UEnum
 [00000017c49e38720] Enum	/Script/Engine.EDrawDebugTrace
 [00000017c49e38780] ArrayProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.ActorsToIgnore
 [00000017c49e38800] ObjectProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.ActorsToIgnore.ActorsToIgnore
 [00000017c49e38880] BoolProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.bTraceComplex
 [00000017c49e38900] ByteProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.TraceChannel
-IsA_UEnum
 [00000017c49e38980] Enum	/Script/Engine.ETraceTypeQuery
 [00000017c49e389e0] StructProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.Orientation
 [00000017c49e38a60] StructProperty	/Script/Engine.KismetSystemLibrary.BoxTraceMulti.HalfSize
@@ -6311,7 +6239,6 @@ IsA_UFunction
 [00000017c49e57c10] Function	/Script/Engine.KismetSystemLibrary.MoveComponentTo
 [00000017c49e57ce0] StructProperty	/Script/Engine.KismetSystemLibrary.MoveComponentTo.LatentInfo
 [00000017c49e57d60] ByteProperty	/Script/Engine.KismetSystemLibrary.MoveComponentTo.MoveAction
-IsA_UEnum
 [00000017c49e57de0] Enum	/Script/Engine.EMoveComponentAction
 [00000017c49e57e40] BoolProperty	/Script/Engine.KismetSystemLibrary.MoveComponentTo.bForceShortestRotationPath
 [00000017c49e57ec0] FloatProperty	/Script/Engine.KismetSystemLibrary.MoveComponentTo.OverTime
@@ -6367,7 +6294,6 @@ IsA_UFunction
 [00000017c49e59540] Function	/Script/Engine.KismetSystemLibrary.QuitGame
 [00000017c49e59610] BoolProperty	/Script/Engine.KismetSystemLibrary.QuitGame.bIgnorePlatformRestrictions
 [00000017c49e59690] ByteProperty	/Script/Engine.KismetSystemLibrary.QuitGame.QuitPreference
-IsA_UEnum
 [00000017c49e59710] Enum	/Script/Engine.EQuitPreference
 [00000017c49e59770] ObjectProperty	/Script/Engine.KismetSystemLibrary.QuitGame.SpecificPlayer
 [00000017c49e597f0] ObjectProperty	/Script/Engine.KismetSystemLibrary.QuitGame.WorldContextObject
@@ -6721,151 +6647,81 @@ IsA_UFunction
 [00000017c49e635f0] DelegateFunction	/Script/SteamVR.SteamVRChaperoneComponent.SteamVRChaperoneEvent__DelegateSignature
 [00000017c49e636c0] MulticastDelegateProperty	/Script/SteamVR.SteamVRChaperoneComponent.OnReturnToBounds
 [00000017c49e63740] MulticastDelegateProperty	/Script/SteamVR.SteamVRChaperoneComponent.OnLeaveBounds
-IsA_UEnum
 [00000017c49e637c0] Enum	/Script/SteamVR.ESteamVRTrackedDeviceType
-IsA_UEnum
 [00000017c49e63820] Enum	/Script/SteamVRController.ESteamVRTouchDPadMapping
-IsA_UEnum
 [00000017c49e63880] Enum	/Script/ShooterGame.EOnlineMode
-IsA_UEnum
 [00000017c49e638e0] Enum	/Script/ShooterGame.EClassRepNodeMapping
-IsA_UEnum
 [00000017c49e63940] Enum	/Script/ShooterGame.EShooterPhysMaterialType
-IsA_UEnum
 [00000017c49e639a0] Enum	/Script/CoreUObject.ELifetimeCondition
-IsA_UEnum
 [00000017c49e63a00] Enum	/Script/CoreUObject.EUnit
-IsA_UEnum
 [00000017c49e63a60] Enum	/Script/CoreUObject.EMouseCursor
-IsA_UEnum
 [00000017c49e63ac0] Enum	/Script/CoreUObject.EPixelFormat
-IsA_UEnum
 [00000017c49e63b20] Enum	/Script/CoreUObject.EAxis
-IsA_UEnum
 [00000017c49e63b80] Enum	/Script/CoreUObject.ELogTimes
-IsA_UEnum
 [00000017c49e63be0] Enum	/Script/CoreUObject.ESearchDir
-IsA_UEnum
 [00000017c49e63c40] Enum	/Script/CoreUObject.ESearchCase
-IsA_UEnum
 [00000017c49e63ca0] Enum	/Script/InputCore.ETouchType
-IsA_UEnum
 [00000017c49e63d00] Enum	/Script/InputCore.EConsoleForGamepadLabels
-IsA_UEnum
 [00000017c49e63d60] Enum	/Script/InputCore.EControllerHand
-IsA_UEnum
 [00000017c49e63dc0] Enum	/Script/SlateCore.EWidgetClipping
-IsA_UEnum
 [00000017c49e63e20] Enum	/Script/SlateCore.EFontLayoutMethod
-IsA_UEnum
 [00000017c49e63e80] Enum	/Script/SlateCore.EFontLoadingPolicy
-IsA_UEnum
 [00000017c49e63ee0] Enum	/Script/SlateCore.EFontHinting
-IsA_UEnum
 [00000017c49e63f40] Enum	/Script/SlateCore.EFocusCause
-IsA_UEnum
 [00000017c49e63fa0] Enum	/Script/SlateCore.EFlowDirectionPreference
-IsA_UEnum
 [00000017c49e64000] Enum	/Script/SlateCore.ETextShapingMethod
-IsA_UEnum
 [00000017c49e64060] Enum	/Script/SlateCore.EUINavigationRule
-IsA_UEnum
 [00000017c49e640c0] Enum	/Script/SlateCore.EColorVisionDeficiency
-IsA_UEnum
 [00000017c49e64120] Enum	/Script/SlateCore.ESlateBrushImageType
-IsA_UEnum
 [00000017c49e64180] Enum	/Script/SlateCore.ESlateBrushMirrorType
-IsA_UEnum
 [00000017c49e641e0] Enum	/Script/SlateCore.ESlateBrushTileType
-IsA_UEnum
 [00000017c49e64240] Enum	/Script/SlateCore.ESlateBrushDrawType
-IsA_UEnum
 [00000017c49e642a0] Enum	/Script/SlateCore.ESlateColorStylingMode
-IsA_UEnum
 [00000017c49e64300] Enum	/Script/SlateCore.ESlateDebuggingFocusEvent
-IsA_UEnum
 [00000017c49e64360] Enum	/Script/SlateCore.ESlateDebuggingStateChangeEvent
-IsA_UEnum
 [00000017c49e643c0] Enum	/Script/SlateCore.ESlateDebuggingInputEvent
-IsA_UEnum
 [00000017c49e64420] Enum	/Script/SlateCore.ESelectInfo
-IsA_UEnum
 [00000017c49e64480] Enum	/Script/SlateCore.ETextCommit
-IsA_UEnum
 [00000017c49e644e0] Enum	/Script/SlateCore.EScrollDirection
-IsA_UEnum
 [00000017c49e64540] Enum	/Script/SlateCore.EOrientation
-IsA_UEnum
 [00000017c49e645a0] Enum	/Script/SlateCore.EMenuPlacement
-IsA_UEnum
 [00000017c49e64600] Enum	/Script/SlateCore.EVerticalAlignment
-IsA_UEnum
 [00000017c49e64660] Enum	/Script/SlateCore.EHorizontalAlignment
-IsA_UEnum
 [00000017c49e646c0] Enum	/Script/SlateCore.ENavigationGenesis
-IsA_UEnum
 [00000017c49e64720] Enum	/Script/SlateCore.ENavigationSource
-IsA_UEnum
 [00000017c49e64780] Enum	/Script/SlateCore.EUINavigation
-IsA_UEnum
 [00000017c49e647e0] Enum	/Script/SlateCore.EButtonPressMethod
-IsA_UEnum
 [00000017c49e64840] Enum	/Script/SlateCore.EButtonTouchMethod
-IsA_UEnum
 [00000017c49e648a0] Enum	/Script/SlateCore.EButtonClickMethod
-IsA_UEnum
 [00000017c49e64900] Enum	/Script/SlateCore.EFontFallback
-IsA_UEnum
 [00000017c49e64960] Enum	/Script/SlateCore.ECheckBoxState
-IsA_UEnum
 [00000017c49e649c0] Enum	/Script/SlateCore.ESlateCheckBoxType
-IsA_UEnum
 [00000017c49e64a20] Enum	/Script/SlateCore.ESlateParentWindowSearchMethod
-IsA_UEnum
 [00000017c49e64a80] Enum	/Script/SlateCore.EConsumeMouseWheel
-IsA_UEnum
 [00000017c49e64ae0] Enum	/Script/Slate.EVirtualKeyboardDismissAction
-IsA_UEnum
 [00000017c49e64b40] Enum	/Script/Slate.ETableViewMode
-IsA_UEnum
 [00000017c49e64ba0] Enum	/Script/Slate.ESelectionMode
-IsA_UEnum
 [00000017c49e64c00] Enum	/Script/Slate.EProgressBarFillType
-IsA_UEnum
 [00000017c49e64c60] Enum	/Script/Slate.EStretch
-IsA_UEnum
 [00000017c49e64cc0] Enum	/Script/Slate.EStretchDirection
-IsA_UEnum
 [00000017c49e64d20] Enum	/Script/Slate.EDescendantScrollDestination
-IsA_UEnum
 [00000017c49e64d80] Enum	/Script/Slate.EListItemAlignment
-IsA_UEnum
 [00000017c49e64de0] Enum	/Script/Slate.ETextFlowDirection
-IsA_UEnum
 [00000017c49e64e40] Enum	/Script/Slate.ETextWrappingPolicy
-IsA_UEnum
 [00000017c49e64ea0] Enum	/Script/Slate.ETextJustify
-IsA_UEnum
 [00000017c49e64f00] Enum	/Script/Slate.EMultipleKeyBindingIndex
 IsA_UFunction
 [00000017c49e64f60] DelegateFunction	/Script/ImageWriteQueue.OnImageWriteComplete__DelegateSignature
 [00000017c49e65030] BoolProperty	/Script/ImageWriteQueue.OnImageWriteComplete__DelegateSignature.bSuccess
-IsA_UEnum
 [00000017c49e650b0] Enum	/Script/ImageWriteQueue.EDesiredImageFormat
-IsA_UEnum
 [00000017c49e65110] Enum	/Script/MaterialShaderQualitySettings.EMobileCSMQuality
-IsA_UEnum
 [00000017c49e65170] Enum	/Script/EngineSettings.ESubLevelStripMode
-IsA_UEnum
 [00000017c49e651d0] Enum	/Script/EngineSettings.EFourPlayerSplitScreenType
-IsA_UEnum
 [00000017c49e65230] Enum	/Script/EngineSettings.EThreePlayerSplitScreenType
-IsA_UEnum
 [00000017c49e65290] Enum	/Script/EngineSettings.ETwoPlayerSplitScreenType
 IsA_UFunction
 [00000017c49e652f0] DelegateFunction	/Script/AugmentedReality.OnARTrackingStateChanged__DelegateSignature
 [00000017c49e653c0] EnumProperty	/Script/AugmentedReality.OnARTrackingStateChanged__DelegateSignature.NewTrackingState
-IsA_UEnum
 [00000017c49e65440] Enum	/Script/AugmentedReality.EARTrackingState
 [00000017c49e654a0] ByteProperty	/Script/AugmentedReality.OnARTrackingStateChanged__DelegateSignature.NewTrackingState.UnderlyingType
 IsA_UFunction
@@ -6878,41 +6734,23 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e65840] DelegateFunction	/Script/AugmentedReality.ARGetCandidateObjectPin__DelegateSignature
 [00000017c49e65910] ObjectProperty	/Script/AugmentedReality.ARGetCandidateObjectPin__DelegateSignature.SavedObject
-IsA_UEnum
 [00000017c49e65990] Enum	/Script/AugmentedReality.EARFaceTrackingUpdate
-IsA_UEnum
 [00000017c49e659f0] Enum	/Script/AugmentedReality.EAREnvironmentCaptureProbeType
-IsA_UEnum
 [00000017c49e65a50] Enum	/Script/AugmentedReality.EARFrameSyncMode
-IsA_UEnum
 [00000017c49e65ab0] Enum	/Script/AugmentedReality.EARLightEstimationMode
-IsA_UEnum
 [00000017c49e65b10] Enum	/Script/AugmentedReality.EARPlaneDetectionMode
-IsA_UEnum
 [00000017c49e65b70] Enum	/Script/AugmentedReality.EARSessionType
-IsA_UEnum
 [00000017c49e65bd0] Enum	/Script/AugmentedReality.EARWorldAlignment
-IsA_UEnum
 [00000017c49e65c30] Enum	/Script/AugmentedReality.EARDepthAccuracy
-IsA_UEnum
 [00000017c49e65c90] Enum	/Script/AugmentedReality.EARDepthQuality
-IsA_UEnum
 [00000017c49e65cf0] Enum	/Script/AugmentedReality.EARTextureType
-IsA_UEnum
 [00000017c49e65d50] Enum	/Script/AugmentedReality.EAREye
-IsA_UEnum
 [00000017c49e65db0] Enum	/Script/AugmentedReality.EARFaceBlendShape
-IsA_UEnum
 [00000017c49e65e10] Enum	/Script/AugmentedReality.EARFaceTrackingDirection
-IsA_UEnum
 [00000017c49e65e70] Enum	/Script/AugmentedReality.EARCandidateImageOrientation
-IsA_UEnum
 [00000017c49e65ed0] Enum	/Script/AugmentedReality.EARWorldMappingState
-IsA_UEnum
 [00000017c49e65f30] Enum	/Script/AugmentedReality.EARSessionStatus
-IsA_UEnum
 [00000017c49e65f90] Enum	/Script/AugmentedReality.EARTrackingQuality
-IsA_UEnum
 [00000017c49e65ff0] Enum	/Script/AugmentedReality.EARLineTraceChannels
 [00000017c49e66050] MulticastDelegateProperty	/Script/HeadMountedDisplay.VRNotificationsComponent.VRControllerRecenteredDelegate
 IsA_UFunction
@@ -6928,17 +6766,11 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e665a0] DelegateFunction	/Script/HeadMountedDisplay.DeviceModelLoadedDelegate__DelegateSignature
 [00000017c49e66670] ObjectProperty	/Script/HeadMountedDisplay.DeviceModelLoadedDelegate__DelegateSignature.LoadedComponent
-IsA_UEnum
 [00000017c49e666f0] Enum	/Script/HeadMountedDisplay.EXRTrackedDeviceType
-IsA_UEnum
 [00000017c49e66750] Enum	/Script/HeadMountedDisplay.ESpectatorScreenMode
-IsA_UEnum
 [00000017c49e667b0] Enum	/Script/HeadMountedDisplay.EHMDWornState
-IsA_UEnum
 [00000017c49e66810] Enum	/Script/HeadMountedDisplay.EHMDTrackingOrigin
-IsA_UEnum
 [00000017c49e66870] Enum	/Script/HeadMountedDisplay.EOrientPositionSelector
-IsA_UEnum
 [00000017c49e668d0] Enum	/Script/HeadMountedDisplay.ETrackingStatus
 IsA_UFunction
 [00000017c49e66930] DelegateFunction	/Script/Foliage.InstancePointDamageSignature__DelegateSignature
@@ -6960,124 +6792,67 @@ IsA_UFunction
 [00000017c49e67120] FloatProperty	/Script/Foliage.InstanceRadialDamageSignature__DelegateSignature.Damages.Damages
 [00000017c49e67190] ArrayProperty	/Script/Foliage.InstanceRadialDamageSignature__DelegateSignature.Instances
 [00000017c49e67210] IntProperty	/Script/Foliage.InstanceRadialDamageSignature__DelegateSignature.Instances.Instances
-IsA_UEnum
 [00000017c49e67280] Enum	/Script/Foliage.EFoliageScaling
-IsA_UEnum
 [00000017c49e672e0] Enum	/Script/Foliage.EVertexColorMaskChannel
-IsA_UEnum
 [00000017c49e67340] Enum	/Script/Foliage.FoliageVertexColorMask
-IsA_UEnum
 [00000017c49e673a0] Enum	/Script/Foliage.ESimulationQuery
-IsA_UEnum
 [00000017c49e67400] Enum	/Script/Foliage.ESimulationOverlap
-IsA_UEnum
 [00000017c49e67460] Enum	/Script/Landscape.ELandscapeSetupErrors
-IsA_UEnum
 [00000017c49e674c0] Enum	/Script/Landscape.ELandscapeGizmoType
-IsA_UEnum
 [00000017c49e67520] Enum	/Script/Landscape.EGrassScaling
-IsA_UEnum
 [00000017c49e67580] Enum	/Script/Landscape.ELandscapeLODFalloff
-IsA_UEnum
 [00000017c49e675e0] Enum	/Script/Landscape.ELandscapeLayerDisplayMode
-IsA_UEnum
 [00000017c49e67640] Enum	/Script/Landscape.ELandscapeLayerPaintingRestriction
-IsA_UEnum
 [00000017c49e676a0] Enum	/Script/Landscape.ELandscapeImportAlphamapType
-IsA_UEnum
 [00000017c49e67700] Enum	/Script/Landscape.LandscapeSplineMeshOrientation
-IsA_UEnum
 [00000017c49e67760] Enum	/Script/Landscape.ELandscapeLayerBlendType
-IsA_UEnum
 [00000017c49e677c0] Enum	/Script/Landscape.ELandscapeCustomizedCoordType
-IsA_UEnum
 [00000017c49e67820] Enum	/Script/Landscape.ETerrainCoordMappingType
-IsA_UEnum
 [00000017c49e67880] Enum	/Script/TimeManagement.EFrameNumberDisplayFormats
 IsA_UFunction
 [00000017c49e678e0] DelegateFunction	/Script/MovieScene.OnMovieSceneSequencePlayerEvent__DelegateSignature
-IsA_UEnum
 [00000017c49e679b0] Enum	/Script/MovieScene.EMovieSceneKeyInterpolation
-IsA_UEnum
 [00000017c49e67a10] Enum	/Script/MovieScene.EMovieSceneBlendType
-IsA_UEnum
 [00000017c49e67a70] Enum	/Script/MovieScene.EMovieSceneBuiltInEasing
-IsA_UEnum
 [00000017c49e67ad0] Enum	/Script/MovieScene.EEvaluationMethod
-IsA_UEnum
 [00000017c49e67b30] Enum	/Script/MovieScene.EUpdateClockSource
-IsA_UEnum
 [00000017c49e67b90] Enum	/Script/MovieScene.EMovieSceneEvaluationType
-IsA_UEnum
 [00000017c49e67bf0] Enum	/Script/MovieScene.EMovieScenePlayerStatus
-IsA_UEnum
 [00000017c49e67c50] Enum	/Script/MovieScene.EMovieSceneObjectBindingSpace
-IsA_UEnum
 [00000017c49e67cb0] Enum	/Script/MovieScene.EMovieSceneCompletionMode
-IsA_UEnum
 [00000017c49e67d10] Enum	/Script/MovieScene.ESectionEvaluationFlags
-IsA_UEnum
 [00000017c49e67d70] Enum	/Script/MovieScene.EUpdatePositionMethod
-IsA_UEnum
 [00000017c49e67dd0] Enum	/Script/MovieScene.ESpawnOwnership
-IsA_UEnum
 [00000017c49e67e30] Enum	/Script/AnimationCore.ETransformConstraintType
-IsA_UEnum
 [00000017c49e67e90] Enum	/Script/AnimationCore.EConstraintType
 IsA_UFunction
 [00000017c49e67ef0] DelegateFunction	/Script/AnimGraphRuntime.OnMontagePlayDelegate__DelegateSignature
 [00000017c49e67fc0] NameProperty	/Script/AnimGraphRuntime.OnMontagePlayDelegate__DelegateSignature.NotifyName
-IsA_UEnum
 [00000017c49e68030] Enum	/Script/AnimGraphRuntime.ESphericalLimitType
-IsA_UEnum
 [00000017c49e68090] Enum	/Script/AnimGraphRuntime.AnimPhysSimSpaceType
-IsA_UEnum
 [00000017c49e680f0] Enum	/Script/AnimGraphRuntime.AnimPhysLinearConstraintType
-IsA_UEnum
 [00000017c49e68150] Enum	/Script/AnimGraphRuntime.AnimPhysAngularConstraintType
-IsA_UEnum
 [00000017c49e681b0] Enum	/Script/AnimGraphRuntime.EDrivenDestinationMode
-IsA_UEnum
 [00000017c49e68210] Enum	/Script/AnimGraphRuntime.EDrivenBoneModificationMode
-IsA_UEnum
 [00000017c49e68270] Enum	/Script/AnimGraphRuntime.EConstraintOffsetOption
-IsA_UEnum
 [00000017c49e682d0] Enum	/Script/AnimGraphRuntime.CopyBoneDeltaMode
-IsA_UEnum
 [00000017c49e68330] Enum	/Script/AnimGraphRuntime.EInterpolationBlend
-IsA_UEnum
 [00000017c49e68390] Enum	/Script/AnimGraphRuntime.EBoneModificationMode
-IsA_UEnum
 [00000017c49e683f0] Enum	/Script/AnimGraphRuntime.EModifyCurveApplyMode
-IsA_UEnum
 [00000017c49e68450] Enum	/Script/AnimGraphRuntime.EPoseDriverOutput
-IsA_UEnum
 [00000017c49e684b0] Enum	/Script/AnimGraphRuntime.EPoseDriverSource
-IsA_UEnum
 [00000017c49e68510] Enum	/Script/AnimGraphRuntime.EPoseDriverType
-IsA_UEnum
 [00000017c49e68570] Enum	/Script/AnimGraphRuntime.ESnapshotSourceMode
-IsA_UEnum
 [00000017c49e685d0] Enum	/Script/AnimGraphRuntime.ERefPoseType
-IsA_UEnum
 [00000017c49e68630] Enum	/Script/AnimGraphRuntime.ESimulationSpace
-IsA_UEnum
 [00000017c49e68690] Enum	/Script/AnimGraphRuntime.EScaleChainInitialLength
-IsA_UEnum
 [00000017c49e686f0] Enum	/Script/AnimGraphRuntime.ESequenceEvalReinit
-IsA_UEnum
 [00000017c49e68750] Enum	/Script/AnimGraphRuntime.ESplineBoneAxis
-IsA_UEnum
 [00000017c49e687b0] Enum	/Script/AnimGraphRuntime.ERBFDistanceMethod
-IsA_UEnum
 [00000017c49e68810] Enum	/Script/AnimGraphRuntime.ERBFFunctionType
-IsA_UEnum
 [00000017c49e68870] Enum	/Script/MovieSceneTracks.MovieScene3DPathSection_Axis
-IsA_UEnum
 [00000017c49e688d0] Enum	/Script/MovieSceneTracks.EFireEventsAtPosition
-IsA_UEnum
 [00000017c49e68930] Enum	/Script/MovieSceneTracks.ELevelVisibility
-IsA_UEnum
 [00000017c49e68990] Enum	/Script/MovieSceneTracks.EParticleKey
 IsA_UFunction
 [00000017c49e689f0] Function	/Script/UMG.Widget.ForceLayoutPrepass
@@ -7174,7 +6949,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e6b230] DelegateFunction	/Script/UMG.Widget.GetSlateVisibility__DelegateSignature
 [00000017c49e6b300] EnumProperty	/Script/UMG.Widget.GetSlateVisibility__DelegateSignature.ReturnValue
-IsA_UEnum
 [00000017c49e6b380] Enum	/Script/UMG.ESlateVisibility
 [00000017c49e6b3e0] ByteProperty	/Script/UMG.Widget.GetSlateVisibility__DelegateSignature.ReturnValue.UnderlyingType
 IsA_UFunction
@@ -7573,7 +7347,6 @@ IsA_UFunction
 [00000017c49e76400] Function	/Script/UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx
 [00000017c49e764d0] BoolProperty	/Script/UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx.bHideCursorDuringCapture
 [00000017c49e76550] EnumProperty	/Script/UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx.InMouseLockMode
-IsA_UEnum
 [00000017c49e765d0] Enum	/Script/Engine.EMouseLockMode
 [00000017c49e76630] ByteProperty	/Script/UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx.InMouseLockMode.UnderlyingType
 [00000017c49e766b0] ObjectProperty	/Script/UMG.WidgetBlueprintLibrary.SetInputMode_GameAndUIEx.InWidgetToFocus
@@ -7615,7 +7388,6 @@ IsA_UFunction
 [00000017c49e77730] BoolProperty	/Script/UMG.WidgetBlueprintLibrary.SetWindowTitleBarState.bWindowButtonsVisible
 [00000017c49e777b0] BoolProperty	/Script/UMG.WidgetBlueprintLibrary.SetWindowTitleBarState.bTitleBarDragEnabled
 [00000017c49e77830] EnumProperty	/Script/UMG.WidgetBlueprintLibrary.SetWindowTitleBarState.Mode
-IsA_UEnum
 [00000017c49e778b0] Enum	/Script/Engine.EWindowTitleBarMode
 [00000017c49e77910] ByteProperty	/Script/UMG.WidgetBlueprintLibrary.SetWindowTitleBarState.Mode.UnderlyingType
 [00000017c49e77990] ObjectProperty	/Script/UMG.WidgetBlueprintLibrary.SetWindowTitleBarState.TitleBarContent
@@ -7796,7 +7568,6 @@ IsA_UScriptStruct
 [00000017c49e7c6e0] ScriptStruct	/Script/Slate.VirtualKeyboardOptions
 [00000017c49e7c790] BoolProperty	/Script/Slate.VirtualKeyboardOptions.bEnableAutocorrect
 [00000017c49e7c810] ByteProperty	/Script/UMG.EditableText.KeyboardType
-IsA_UEnum
 [00000017c49e7c890] Enum	/Script/UMG.EVirtualKeyboardType
 [00000017c49e7c8f0] BoolProperty	/Script/UMG.EditableText.AllowContextMenu
 [00000017c49e7c970] BoolProperty	/Script/UMG.EditableText.SelectAllTextOnCommit
@@ -8185,66 +7956,37 @@ IsA_UFunction
 [00000017c49e87710] DelegateFunction	/Script/UMG.OnHoveredWidgetChanged__DelegateSignature
 [00000017c49e877e0] ObjectProperty	/Script/UMG.OnHoveredWidgetChanged__DelegateSignature.PreviousWidgetComponent
 [00000017c49e87860] ObjectProperty	/Script/UMG.OnHoveredWidgetChanged__DelegateSignature.WidgetComponent
-IsA_UEnum
 [00000017c49e878e0] Enum	/Script/UMG.EDragPivot
-IsA_UEnum
 [00000017c49e87940] Enum	/Script/UMG.EDynamicBoxType
-IsA_UEnum
 [00000017c49e879a0] Enum	/Script/UMG.ESlateSizeRule
-IsA_UEnum
 [00000017c49e87a00] Enum	/Script/UMG.EUMGSequencePlayMode
-IsA_UEnum
 [00000017c49e87a60] Enum	/Script/UMG.EWidgetAnimationEvent
-IsA_UEnum
 [00000017c49e87ac0] Enum	/Script/UMG.EWidgetTickFrequency
-IsA_UEnum
 [00000017c49e87b20] Enum	/Script/UMG.EWidgetDesignFlags
-IsA_UEnum
 [00000017c49e87b80] Enum	/Script/UMG.EBindingKind
-IsA_UEnum
 [00000017c49e87be0] Enum	/Script/UMG.EWidgetGeometryMode
-IsA_UEnum
 [00000017c49e87c40] Enum	/Script/UMG.EWidgetBlendMode
-IsA_UEnum
 [00000017c49e87ca0] Enum	/Script/UMG.EWidgetTimingPolicy
-IsA_UEnum
 [00000017c49e87d00] Enum	/Script/UMG.EWidgetSpace
-IsA_UEnum
 [00000017c49e87d60] Enum	/Script/UMG.EWidgetInteractionSource
-IsA_UEnum
 [00000017c49e87dc0] Enum	/Script/CinematicCamera.ECameraFocusMethod
 IsA_UFunction
 [00000017c49e87e20] DelegateFunction	/Script/AudioMixer.OnSynthEnvelopeValue__DelegateSignature
 [00000017c49e87ef0] FloatProperty	/Script/AudioMixer.OnSynthEnvelopeValue__DelegateSignature.EnvelopeValue
-IsA_UEnum
 [00000017c49e87f60] Enum	/Script/AudioMixer.EFFTWindowType
-IsA_UEnum
 [00000017c49e87fc0] Enum	/Script/AudioMixer.EFFTPeakInterpolationMethod
-IsA_UEnum
 [00000017c49e88020] Enum	/Script/AudioMixer.EFFTSize
-IsA_UEnum
 [00000017c49e88080] Enum	/Script/AudioMixer.ESubmixEffectDynamicsPeakMode
-IsA_UEnum
 [00000017c49e880e0] Enum	/Script/AudioMixer.ESubmixEffectDynamicsProcessorType
-IsA_UEnum
 [00000017c49e88140] Enum	/Script/GameplayTags.EGameplayTagQueryExprType
-IsA_UEnum
 [00000017c49e881a0] Enum	/Script/GameplayTags.EGameplayContainerMatchType
-IsA_UEnum
 [00000017c49e88200] Enum	/Script/GameplayTags.EGameplayTagMatchType
-IsA_UEnum
 [00000017c49e88260] Enum	/Script/GameplayTags.EGameplayTagSelectionType
-IsA_UEnum
 [00000017c49e882c0] Enum	/Script/GameplayTags.EGameplayTagSourceType
-IsA_UEnum
 [00000017c49e88320] Enum	/Script/AudioPlatformConfiguration.ESoundwaveSampleRateSettings
-IsA_UEnum
 [00000017c49e88380] Enum	/Script/MeshDescription.EComputeNTBsOptions
-IsA_UEnum
 [00000017c49e883e0] Enum	/Script/EyeTracker.EEyeTrackerStatus
-IsA_UEnum
 [00000017c49e88440] Enum	/Script/MovieSceneCapture.EHDRCaptureGamut
-IsA_UEnum
 [00000017c49e884a0] Enum	/Script/MovieSceneCapture.EMovieSceneCaptureProtocolState
 IsA_UFunction
 [00000017c49e88500] Function	/Script/Engine.SceneComponent.DetachFromParent
@@ -8314,7 +8056,6 @@ IsA_UFunction
 [00000017c49e8a120] Function	/Script/Engine.SceneComponent.GetSocketTransform
 [00000017c49e8a1f0] StructProperty	/Script/Engine.SceneComponent.GetSocketTransform.ReturnValue
 [00000017c49e8a270] ByteProperty	/Script/Engine.SceneComponent.GetSocketTransform.TransformSpace
-IsA_UEnum
 [00000017c49e8a2f0] Enum	/Script/Engine.ERelativeTransformSpace
 [00000017c49e8a350] NameProperty	/Script/Engine.SceneComponent.GetSocketTransform.InSocketName
 IsA_UFunction
@@ -8383,7 +8124,6 @@ IsA_UFunction
 [00000017c49e8c0c0] BoolProperty	/Script/Engine.SceneComponent.K2_AttachTo.ReturnValue
 [00000017c49e8c140] BoolProperty	/Script/Engine.SceneComponent.K2_AttachTo.bWeldSimulatedBodies
 [00000017c49e8c1c0] ByteProperty	/Script/Engine.SceneComponent.K2_AttachTo.AttachType
-IsA_UEnum
 [00000017c49e8c240] Enum	/Script/Engine.EAttachLocation
 [00000017c49e8c2a0] NameProperty	/Script/Engine.SceneComponent.K2_AttachTo.InSocketName
 [00000017c49e8c310] ObjectProperty	/Script/Engine.SceneComponent.K2_AttachTo.InParent
@@ -8392,7 +8132,6 @@ IsA_UFunction
 [00000017c49e8c460] BoolProperty	/Script/Engine.SceneComponent.K2_AttachToComponent.ReturnValue
 [00000017c49e8c4e0] BoolProperty	/Script/Engine.SceneComponent.K2_AttachToComponent.bWeldSimulatedBodies
 [00000017c49e8c560] EnumProperty	/Script/Engine.SceneComponent.K2_AttachToComponent.ScaleRule
-IsA_UEnum
 [00000017c49e8c5e0] Enum	/Script/Engine.EAttachmentRule
 [00000017c49e8c640] ByteProperty	/Script/Engine.SceneComponent.K2_AttachToComponent.ScaleRule.UnderlyingType
 [00000017c49e8c6c0] EnumProperty	/Script/Engine.SceneComponent.K2_AttachToComponent.RotationRule
@@ -8405,7 +8144,6 @@ IsA_UFunction
 [00000017c49e8c9b0] Function	/Script/Engine.SceneComponent.K2_DetachFromComponent
 [00000017c49e8ca80] BoolProperty	/Script/Engine.SceneComponent.K2_DetachFromComponent.bCallModify
 [00000017c49e8cb00] EnumProperty	/Script/Engine.SceneComponent.K2_DetachFromComponent.ScaleRule
-IsA_UEnum
 [00000017c49e8cb80] Enum	/Script/Engine.EDetachmentRule
 [00000017c49e8cbe0] ByteProperty	/Script/Engine.SceneComponent.K2_DetachFromComponent.ScaleRule.UnderlyingType
 [00000017c49e8cc60] EnumProperty	/Script/Engine.SceneComponent.K2_DetachFromComponent.RotationRule
@@ -8503,7 +8241,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e8f640] Function	/Script/Engine.SceneComponent.SetMobility
 [00000017c49e8f710] ByteProperty	/Script/Engine.SceneComponent.SetMobility.NewMobility
-IsA_UEnum
 [00000017c49e8f790] Enum	/Script/Engine.EComponentMobility
 IsA_UFunction
 [00000017c49e8f7f0] Function	/Script/Engine.SceneComponent.SetRelativeScale3D
@@ -8528,7 +8265,6 @@ IsA_UFunction
 [00000017c49e900c0] BoolProperty	/Script/Engine.SceneComponent.ToggleVisibility.bPropagateToChildren
 [00000017c49e90140] MulticastDelegateProperty	/Script/Engine.SceneComponent.PhysicsVolumeChangedDelegate
 [00000017c49e901c0] ByteProperty	/Script/Engine.SceneComponent.DetailMode
-IsA_UEnum
 [00000017c49e90240] Enum	/Script/Engine.EDetailMode
 [00000017c49e902a0] ByteProperty	/Script/Engine.SceneComponent.Mobility
 [00000017c49e90320] BoolProperty	/Script/Engine.SceneComponent.bUseAttachParentBound
@@ -8576,718 +8312,364 @@ IsA_UFunction
 [00000017c49e91740] ArrayProperty	/Script/MRMesh.MockDataMeshTrackerComponent.BlockVertexColors
 [00000017c49e917c0] StructProperty	/Script/MRMesh.MockDataMeshTrackerComponent.BlockVertexColors.BlockVertexColors
 [00000017c49e91840] EnumProperty	/Script/MRMesh.MockDataMeshTrackerComponent.VertexColorMode
-IsA_UEnum
 [00000017c49e918c0] Enum	/Script/MRMesh.EMeshTrackerVertexColorMode
 [00000017c49e91920] ByteProperty	/Script/MRMesh.MockDataMeshTrackerComponent.VertexColorMode.UnderlyingType
 [00000017c49e919a0] BoolProperty	/Script/MRMesh.MockDataMeshTrackerComponent.RequestVertexConfidence
 [00000017c49e91a20] BoolProperty	/Script/MRMesh.MockDataMeshTrackerComponent.RequestNormals
 [00000017c49e91aa0] BoolProperty	/Script/MRMesh.MockDataMeshTrackerComponent.ScanWorld
 [00000017c49e91b20] MulticastDelegateProperty	/Script/MRMesh.MockDataMeshTrackerComponent.OnMeshTrackerUpdated
-IsA_UEnum
 [00000017c49e91ba0] Enum	/Script/MoviePlayer.EMoviePlaybackType
-IsA_UEnum
 [00000017c49e91c00] Enum	/Script/Engine.EAlphaBlendOption
-IsA_UEnum
 [00000017c49e91c60] Enum	/Script/Engine.EAnimGroupRole
-IsA_UEnum
 [00000017c49e91cc0] Enum	/Script/Engine.ERawCurveTrackTypes
-IsA_UEnum
 [00000017c49e91d20] Enum	/Script/Engine.EAnimAssetCurveFlags
-IsA_UEnum
 [00000017c49e91d80] Enum	/Script/Engine.AnimationCompressionFormat
-IsA_UEnum
 [00000017c49e91de0] Enum	/Script/Engine.EAdditiveBasePoseType
-IsA_UEnum
 [00000017c49e91e40] Enum	/Script/Engine.ERootMotionMode
-IsA_UEnum
 [00000017c49e91ea0] Enum	/Script/Engine.ERootMotionRootLock
-IsA_UEnum
 [00000017c49e91f00] Enum	/Script/Engine.EMontagePlayReturnType
-IsA_UEnum
 [00000017c49e91f60] Enum	/Script/Engine.EDrawDebugItemType
-IsA_UEnum
 [00000017c49e91fc0] Enum	/Script/Engine.EAnimLinkMethod
-IsA_UEnum
 [00000017c49e92020] Enum	/Script/Engine.EMontageSubStepResult
-IsA_UEnum
 [00000017c49e92080] Enum	/Script/Engine.EAnimNotifyEventType
-IsA_UEnum
 [00000017c49e920e0] Enum	/Script/Engine.EEvaluatorMode
-IsA_UEnum
 [00000017c49e92140] Enum	/Script/Engine.EEvaluatorDataSource
-IsA_UEnum
 [00000017c49e921a0] Enum	/Script/Engine.ECopyType
-IsA_UEnum
 [00000017c49e92200] Enum	/Script/Engine.EPostCopyOperation
-IsA_UEnum
 [00000017c49e92260] Enum	/Script/Engine.EPinHidingMode
-IsA_UEnum
 [00000017c49e922c0] Enum	/Script/Engine.AnimPhysCollisionType
-IsA_UEnum
 [00000017c49e92320] Enum	/Script/Engine.AnimPhysTwistAxis
-IsA_UEnum
 [00000017c49e92380] Enum	/Script/Engine.AnimationKeyFormat
-IsA_UEnum
 [00000017c49e923e0] Enum	/Script/Engine.ETypeAdvanceAnim
-IsA_UEnum
 [00000017c49e92440] Enum	/Script/Engine.ETransitionLogicType
-IsA_UEnum
 [00000017c49e924a0] Enum	/Script/Engine.ETransitionBlendMode
-IsA_UEnum
 [00000017c49e92500] Enum	/Script/Engine.EComponentType
-IsA_UEnum
 [00000017c49e92560] Enum	/Script/Engine.EAxisOption
-IsA_UEnum
 [00000017c49e925c0] Enum	/Script/Engine.EAnimInterpolationType
-IsA_UEnum
 [00000017c49e92620] Enum	/Script/Engine.ECurveBlendOption
-IsA_UEnum
 [00000017c49e92680] Enum	/Script/Engine.EAdditiveAnimationType
-IsA_UEnum
 [00000017c49e926e0] Enum	/Script/Engine.ENotifyFilterType
-IsA_UEnum
 [00000017c49e92740] Enum	/Script/Engine.EMontageNotifyTickType
-IsA_UEnum
 [00000017c49e927a0] Enum	/Script/Engine.EBoneRotationSource
-IsA_UEnum
 [00000017c49e92800] Enum	/Script/Engine.EBoneControlSpace
-IsA_UEnum
 [00000017c49e92860] Enum	/Script/Engine.EBoneAxis
-IsA_UEnum
 [00000017c49e928c0] Enum	/Script/Engine.EPrimaryAssetCookRule
-IsA_UEnum
 [00000017c49e92920] Enum	/Script/Engine.EAttenuationShape
-IsA_UEnum
 [00000017c49e92980] Enum	/Script/Engine.EAttenuationDistanceModel
-IsA_UEnum
 [00000017c49e929e0] Enum	/Script/Engine.EMonoChannelUpmixMethod
-IsA_UEnum
 [00000017c49e92a40] Enum	/Script/Engine.EPanningMethod
-IsA_UEnum
 [00000017c49e92aa0] Enum	/Script/Engine.EVoiceSampleRate
-IsA_UEnum
 [00000017c49e92b00] Enum	/Script/Engine.ReverbPreset
-IsA_UEnum
 [00000017c49e92b60] Enum	/Script/Engine.EBlendableLocation
-IsA_UEnum
 [00000017c49e92bc0] Enum	/Script/Engine.ENotifyTriggerMode
-IsA_UEnum
 [00000017c49e92c20] Enum	/Script/Engine.EBlendSpaceAxis
-IsA_UEnum
 [00000017c49e92c80] Enum	/Script/Engine.EBlueprintNativizationFlag
-IsA_UEnum
 [00000017c49e92ce0] Enum	/Script/Engine.EBlueprintCompileMode
-IsA_UEnum
 [00000017c49e92d40] Enum	/Script/Engine.EBlueprintType
-IsA_UEnum
 [00000017c49e92da0] Enum	/Script/Engine.EBlueprintStatus
-IsA_UEnum
 [00000017c49e92e00] Enum	/Script/Engine.EDOFMode
-IsA_UEnum
 [00000017c49e92e60] Enum	/Script/Engine.EBodyCollisionResponse
-IsA_UEnum
 [00000017c49e92ec0] Enum	/Script/Engine.EPhysicsType
-IsA_UEnum
 [00000017c49e92f20] Enum	/Script/Engine.ECollisionTraceFlag
-IsA_UEnum
 [00000017c49e92f80] Enum	/Script/Engine.EBrushType
-IsA_UEnum
 [00000017c49e92fe0] Enum	/Script/Engine.ECsgOper
-IsA_UEnum
 [00000017c49e93040] Enum	/Script/Engine.EInitialOscillatorOffset
-IsA_UEnum
 [00000017c49e930a0] Enum	/Script/Engine.EOscillatorWaveform
-IsA_UEnum
 [00000017c49e93100] Enum	/Script/Engine.ECameraAlphaBlendMode
-IsA_UEnum
 [00000017c49e93160] Enum	/Script/Engine.ECameraAnimPlaySpace
-IsA_UEnum
 [00000017c49e931c0] Enum	/Script/Engine.ECameraProjectionMode
-IsA_UEnum
 [00000017c49e93220] Enum	/Script/Engine.ECloudStorageDelegate
-IsA_UEnum
 [00000017c49e93280] Enum	/Script/Engine.EAngularDriveMode
-IsA_UEnum
 [00000017c49e932e0] Enum	/Script/Engine.ELinearConstraintMotion
-IsA_UEnum
 [00000017c49e93340] Enum	/Script/Engine.ECurveTableMode
-IsA_UEnum
 [00000017c49e933a0] Enum	/Script/Engine.EEvaluateCurveTableResult
-IsA_UEnum
 [00000017c49e93400] Enum	/Script/Engine.EGrammaticalNumber
-IsA_UEnum
 [00000017c49e93460] Enum	/Script/Engine.EGrammaticalGender
-IsA_UEnum
 [00000017c49e934c0] Enum	/Script/Engine.DistributionParamMode
-IsA_UEnum
 [00000017c49e93520] Enum	/Script/Engine.EDistributionVectorMirrorFlags
-IsA_UEnum
 [00000017c49e93580] Enum	/Script/Engine.EDistributionVectorLockFlags
-IsA_UEnum
 [00000017c49e935e0] Enum	/Script/Engine.ENodeEnabledState
-IsA_UEnum
 [00000017c49e93640] Enum	/Script/Engine.ENodeAdvancedPins
-IsA_UEnum
 [00000017c49e936a0] Enum	/Script/Engine.ENodeTitleType
-IsA_UEnum
 [00000017c49e93700] Enum	/Script/Engine.EPinContainerType
-IsA_UEnum
 [00000017c49e93760] Enum	/Script/Engine.EEdGraphPinDirection
-IsA_UEnum
 [00000017c49e937c0] Enum	/Script/Engine.EBlueprintPinStyleType
-IsA_UEnum
 [00000017c49e93820] Enum	/Script/Engine.ECanCreateConnectionResponse
-IsA_UEnum
 [00000017c49e93880] Enum	/Script/Engine.EGraphType
-IsA_UEnum
 [00000017c49e938e0] Enum	/Script/Engine.EConsoleType
-IsA_UEnum
 [00000017c49e93940] Enum	/Script/Engine.ETransitionType
-IsA_UEnum
 [00000017c49e939a0] Enum	/Script/Engine.EFullyLoadPackageType
-IsA_UEnum
 [00000017c49e93a00] Enum	/Script/Engine.EViewModeIndex
-IsA_UEnum
 [00000017c49e93a60] Enum	/Script/Engine.EDemoPlayFailure
-IsA_UEnum
 [00000017c49e93ac0] Enum	/Script/Engine.ETravelType
-IsA_UEnum
 [00000017c49e93b20] Enum	/Script/Engine.ENetworkLagState
-IsA_UEnum
 [00000017c49e93b80] Enum	/Script/Engine.EMouseCaptureMode
-IsA_UEnum
 [00000017c49e93be0] Enum	/Script/Engine.EInputEvent
-IsA_UEnum
 [00000017c49e93c40] Enum	/Script/Engine.ECustomTimeStepSynchronizationState
-IsA_UEnum
 [00000017c49e93ca0] Enum	/Script/Engine.EMeshBufferAccess
-IsA_UEnum
 [00000017c49e93d00] Enum	/Script/Engine.ESpawnActorCollisionHandlingMethod
-IsA_UEnum
 [00000017c49e93d60] Enum	/Script/Engine.EConstraintFrame
-IsA_UEnum
 [00000017c49e93dc0] Enum	/Script/Engine.EAngularConstraintMotion
-IsA_UEnum
 [00000017c49e93e20] Enum	/Script/Engine.EComponentSocketType
-IsA_UEnum
 [00000017c49e93e80] Enum	/Script/Engine.EPhysicalSurface
-IsA_UEnum
 [00000017c49e93ee0] Enum	/Script/Engine.EWalkableSlopeBehavior
-IsA_UEnum
 [00000017c49e93f40] Enum	/Script/Engine.ERotatorQuantization
-IsA_UEnum
 [00000017c49e93fa0] Enum	/Script/Engine.EVectorQuantization
-IsA_UEnum
 [00000017c49e94000] Enum	/Script/Engine.EAutoPossessAI
-IsA_UEnum
 [00000017c49e94060] Enum	/Script/Engine.EAutoReceiveInput
-IsA_UEnum
 [00000017c49e940c0] Enum	/Script/Engine.ENetDormancy
-IsA_UEnum
 [00000017c49e94120] Enum	/Script/Engine.ENetRole
-IsA_UEnum
 [00000017c49e94180] Enum	/Script/Engine.EUpdateRateShiftBucket
-IsA_UEnum
 [00000017c49e941e0] Enum	/Script/Engine.ETeleportType
-IsA_UEnum
 [00000017c49e94240] Enum	/Script/Engine.EShadowMapFlags
-IsA_UEnum
 [00000017c49e942a0] Enum	/Script/Engine.ELightMapPaddingType
-IsA_UEnum
 [00000017c49e94300] Enum	/Script/Engine.ECollisionEnabled
-IsA_UEnum
 [00000017c49e94360] Enum	/Script/Engine.ETimelineSigType
-IsA_UEnum
 [00000017c49e943c0] Enum	/Script/Engine.ESleepFamily
-IsA_UEnum
 [00000017c49e94420] Enum	/Script/Engine.ERadialImpulseFalloff
-IsA_UEnum
 [00000017c49e94480] Enum	/Script/Engine.EFilterInterpolationType
-IsA_UEnum
 [00000017c49e944e0] Enum	/Script/Engine.ECollisionResponse
-IsA_UEnum
 [00000017c49e94540] Enum	/Script/Engine.EOverlapFilterOption
-IsA_UEnum
 [00000017c49e945a0] Enum	/Script/Engine.ECollisionChannel
-IsA_UEnum
 [00000017c49e94600] Enum	/Script/Engine.ENetworkSmoothingMode
-IsA_UEnum
 [00000017c49e94660] Enum	/Script/Engine.ELightingBuildQuality
-IsA_UEnum
 [00000017c49e946c0] Enum	/Script/Engine.EMaterialSamplerType
-IsA_UEnum
 [00000017c49e94720] Enum	/Script/Engine.EMaterialTessellationMode
-IsA_UEnum
 [00000017c49e94780] Enum	/Script/Engine.EMaterialShadingModel
-IsA_UEnum
 [00000017c49e947e0] Enum	/Script/Engine.EParticleCollisionMode
-IsA_UEnum
 [00000017c49e94840] Enum	/Script/Engine.ETrailWidthMode
-IsA_UEnum
 [00000017c49e948a0] Enum	/Script/Engine.EGBufferFormat
-IsA_UEnum
 [00000017c49e94900] Enum	/Script/Engine.ESceneCaptureCompositeMode
-IsA_UEnum
 [00000017c49e94960] Enum	/Script/Engine.ESceneCaptureSource
-IsA_UEnum
 [00000017c49e949c0] Enum	/Script/Engine.ETranslucentSortPolicy
-IsA_UEnum
 [00000017c49e94a20] Enum	/Script/Engine.ERefractionMode
-IsA_UEnum
 [00000017c49e94a80] Enum	/Script/Engine.ETranslucencyLightingMode
-IsA_UEnum
 [00000017c49e94ae0] Enum	/Script/Engine.ESamplerSourceMode
-IsA_UEnum
 [00000017c49e94b40] Enum	/Script/Engine.EBlendMode
-IsA_UEnum
 [00000017c49e94ba0] Enum	/Script/Engine.EOcclusionCombineMode
-IsA_UEnum
 [00000017c49e94c00] Enum	/Script/Engine.ELightmapType
-IsA_UEnum
 [00000017c49e94c60] Enum	/Script/Engine.EIndirectLightingCacheQuality
-IsA_UEnum
 [00000017c49e94cc0] Enum	/Script/Engine.ESceneDepthPriorityGroup
-IsA_UEnum
 [00000017c49e94d20] Enum	/Script/Engine.EAspectRatioAxisConstraint
-IsA_UEnum
 [00000017c49e94d80] Enum	/Script/Engine.EFontCacheType
-IsA_UEnum
 [00000017c49e94de0] Enum	/Script/Engine.EFontImportCharacterSet
-IsA_UEnum
 [00000017c49e94e40] Enum	/Script/Engine.EStandbyType
-IsA_UEnum
 [00000017c49e94ea0] Enum	/Script/Engine.ESuggestProjVelocityTraceOption
-IsA_UEnum
 [00000017c49e94f00] Enum	/Script/Engine.EWindowMode
-IsA_UEnum
 [00000017c49e94f60] Enum	/Script/Engine.EImportanceWeight
-IsA_UEnum
 [00000017c49e94fc0] Enum	/Script/Engine.EAdManagerDelegate
-IsA_UEnum
 [00000017c49e95020] Enum	/Script/Engine.EControllerAnalogStick
-IsA_UEnum
 [00000017c49e95080] Enum	/Script/Engine.EAnimAlphaInputType
-IsA_UEnum
 [00000017c49e950e0] Enum	/Script/Engine.ETrackActiveCondition
-IsA_UEnum
 [00000017c49e95140] Enum	/Script/Engine.EInterpTrackMoveRotMode
-IsA_UEnum
 [00000017c49e951a0] Enum	/Script/Engine.EInterpMoveAxis
-IsA_UEnum
 [00000017c49e95200] Enum	/Script/Engine.ETrackToggleAction
-IsA_UEnum
 [00000017c49e95260] Enum	/Script/Engine.EVisibilityTrackCondition
-IsA_UEnum
 [00000017c49e952c0] Enum	/Script/Engine.EVisibilityTrackAction
-IsA_UEnum
 [00000017c49e95320] Enum	/Script/Engine.ESlateGesture
-IsA_UEnum
 [00000017c49e95380] Enum	/Script/Engine.ELerpInterpolationMode
-IsA_UEnum
 [00000017c49e953e0] Enum	/Script/Engine.EEasingFunc
-IsA_UEnum
 [00000017c49e95440] Enum	/Script/Engine.ERoundingMode
-IsA_UEnum
 [00000017c49e954a0] Enum	/Script/Engine.EStreamingVolumeUsage
-IsA_UEnum
 [00000017c49e95500] Enum	/Script/Engine.EMaterialDecalResponse
-IsA_UEnum
 [00000017c49e95560] Enum	/Script/Engine.EDecalBlendMode
-IsA_UEnum
 [00000017c49e955c0] Enum	/Script/Engine.ETextureColorChannel
-IsA_UEnum
 [00000017c49e95620] Enum	/Script/Engine.EMaterialAttributeBlend
-IsA_UEnum
 [00000017c49e95680] Enum	/Script/Engine.EChannelMaskParameterColor
-IsA_UEnum
 [00000017c49e956e0] Enum	/Script/Engine.EClampMode
-IsA_UEnum
 [00000017c49e95740] Enum	/Script/Engine.ECustomMaterialOutputType
-IsA_UEnum
 [00000017c49e957a0] Enum	/Script/Engine.EDepthOfFieldFunctionValue
-IsA_UEnum
 [00000017c49e95800] Enum	/Script/Engine.EFunctionInputType
-IsA_UEnum
 [00000017c49e95860] Enum	/Script/Engine.ENoiseFunction
-IsA_UEnum
 [00000017c49e958c0] Enum	/Script/Engine.EMaterialSceneAttributeInputMode
-IsA_UEnum
 [00000017c49e95920] Enum	/Script/Engine.ESceneTextureId
-IsA_UEnum
 [00000017c49e95980] Enum	/Script/Engine.ESpeedTreeLODType
-IsA_UEnum
 [00000017c49e959e0] Enum	/Script/Engine.ESpeedTreeWindType
-IsA_UEnum
 [00000017c49e95a40] Enum	/Script/Engine.ESpeedTreeGeometryType
-IsA_UEnum
 [00000017c49e95aa0] Enum	/Script/Engine.EMaterialExposedTextureProperty
-IsA_UEnum
 [00000017c49e95b00] Enum	/Script/Engine.ETextureMipValueMode
-IsA_UEnum
 [00000017c49e95b60] Enum	/Script/Engine.EMaterialVectorCoordTransform
-IsA_UEnum
 [00000017c49e95bc0] Enum	/Script/Engine.EMaterialVectorCoordTransformSource
-IsA_UEnum
 [00000017c49e95c20] Enum	/Script/Engine.EMaterialPositionTransformSource
-IsA_UEnum
 [00000017c49e95c80] Enum	/Script/Engine.EVectorNoiseFunction
-IsA_UEnum
 [00000017c49e95ce0] Enum	/Script/Engine.EMaterialExposedViewProperty
-IsA_UEnum
 [00000017c49e95d40] Enum	/Script/Engine.EWorldPositionIncludedOffsets
-IsA_UEnum
 [00000017c49e95da0] Enum	/Script/Engine.EMaterialFunctionUsage
-IsA_UEnum
 [00000017c49e95e00] Enum	/Script/Engine.EMaterialUsage
-IsA_UEnum
 [00000017c49e95e60] Enum	/Script/Engine.EMaterialParameterAssociation
-IsA_UEnum
 [00000017c49e95ec0] Enum	/Script/Engine.EMaterialMergeType
-IsA_UEnum
 [00000017c49e95f20] Enum	/Script/Engine.ETextureSizingType
-IsA_UEnum
 [00000017c49e95f80] Enum	/Script/Engine.EMaterialDomain
-IsA_UEnum
 [00000017c49e95fe0] Enum	/Script/Engine.EMeshInstancingReplacementMethod
-IsA_UEnum
 [00000017c49e96040] Enum	/Script/Engine.EUVOutput
-IsA_UEnum
 [00000017c49e960a0] Enum	/Script/Engine.EMeshMergeType
-IsA_UEnum
 [00000017c49e96100] Enum	/Script/Engine.EMeshLODSelectionType
-IsA_UEnum
 [00000017c49e96160] Enum	/Script/Engine.EProxyNormalComputationMethod
-IsA_UEnum
 [00000017c49e961c0] Enum	/Script/Engine.ELandscapeCullingPrecision
-IsA_UEnum
 [00000017c49e96220] Enum	/Script/Engine.EStaticMeshReductionTerimationCriterion
-IsA_UEnum
 [00000017c49e96280] Enum	/Script/Engine.EMeshFeatureImportance
-IsA_UEnum
 [00000017c49e962e0] Enum	/Script/Engine.EVertexPaintAxis
-IsA_UEnum
 [00000017c49e96340] Enum	/Script/Engine.EMicroTransactionResult
-IsA_UEnum
 [00000017c49e963a0] Enum	/Script/Engine.EMicroTransactionDelegate
-IsA_UEnum
 [00000017c49e96400] Enum	/Script/Engine.FNavigationSystemRunMode
-IsA_UEnum
 [00000017c49e96460] Enum	/Script/Engine.ENavigationQueryResult
-IsA_UEnum
 [00000017c49e964c0] Enum	/Script/Engine.ENavPathEvent
-IsA_UEnum
 [00000017c49e96520] Enum	/Script/Engine.ENavDataGatheringModeConfig
-IsA_UEnum
 [00000017c49e96580] Enum	/Script/Engine.ENavDataGatheringMode
-IsA_UEnum
 [00000017c49e965e0] Enum	/Script/Engine.ENavigationOptionFlag
-IsA_UEnum
 [00000017c49e96640] Enum	/Script/Engine.ENavLinkDirection
-IsA_UEnum
 [00000017c49e966a0] Enum	/Script/Engine.EEmitterRenderMode
-IsA_UEnum
 [00000017c49e96700] Enum	/Script/Engine.EParticleSubUVInterpMethod
-IsA_UEnum
 [00000017c49e96760] Enum	/Script/Engine.EParticleBurstMethod
-IsA_UEnum
 [00000017c49e967c0] Enum	/Script/Engine.EParticleSystemInsignificanceReaction
-IsA_UEnum
 [00000017c49e96820] Enum	/Script/Engine.EParticleSignificanceLevel
-IsA_UEnum
 [00000017c49e96880] Enum	/Script/Engine.EParticleDetailMode
-IsA_UEnum
 [00000017c49e968e0] Enum	/Script/Engine.EParticleSourceSelectionMethod
-IsA_UEnum
 [00000017c49e96940] Enum	/Script/Engine.EModuleType
-IsA_UEnum
 [00000017c49e969a0] Enum	/Script/Engine.EAttractorParticleSelectionMethod
-IsA_UEnum
 [00000017c49e96a00] Enum	/Script/Engine.Beam2SourceTargetTangentMethod
-IsA_UEnum
 [00000017c49e96a60] Enum	/Script/Engine.Beam2SourceTargetMethod
-IsA_UEnum
 [00000017c49e96ac0] Enum	/Script/Engine.BeamModifierType
-IsA_UEnum
 [00000017c49e96b20] Enum	/Script/Engine.EParticleCameraOffsetUpdateMethod
-IsA_UEnum
 [00000017c49e96b80] Enum	/Script/Engine.EParticleCollisionComplete
-IsA_UEnum
 [00000017c49e96be0] Enum	/Script/Engine.EParticleCollisionResponse
-IsA_UEnum
 [00000017c49e96c40] Enum	/Script/Engine.ELocationBoneSocketSelectionMethod
-IsA_UEnum
 [00000017c49e96ca0] Enum	/Script/Engine.ELocationBoneSocketSource
-IsA_UEnum
 [00000017c49e96d00] Enum	/Script/Engine.ELocationEmitterSelectionMethod
-IsA_UEnum
 [00000017c49e96d60] Enum	/Script/Engine.CylinderHeightAxis
-IsA_UEnum
 [00000017c49e96dc0] Enum	/Script/Engine.ELocationSkelVertSurfaceSource
-IsA_UEnum
 [00000017c49e96e20] Enum	/Script/Engine.EOrbitChainMode
-IsA_UEnum
 [00000017c49e96e80] Enum	/Script/Engine.EParticleAxisLock
-IsA_UEnum
 [00000017c49e96ee0] Enum	/Script/Engine.EEmitterDynamicParameterValue
-IsA_UEnum
 [00000017c49e96f40] Enum	/Script/Engine.EEmitterNormalsMode
-IsA_UEnum
 [00000017c49e96fa0] Enum	/Script/Engine.EParticleSortMode
-IsA_UEnum
 [00000017c49e97000] Enum	/Script/Engine.EParticleUVFlipMode
-IsA_UEnum
 [00000017c49e97060] Enum	/Script/Engine.ETrail2SourceMethod
-IsA_UEnum
 [00000017c49e970c0] Enum	/Script/Engine.EBeamTaperMethod
-IsA_UEnum
 [00000017c49e97120] Enum	/Script/Engine.EBeam2Method
-IsA_UEnum
 [00000017c49e97180] Enum	/Script/Engine.EMeshCameraFacingOptions
-IsA_UEnum
 [00000017c49e971e0] Enum	/Script/Engine.EMeshCameraFacingUpAxis
-IsA_UEnum
 [00000017c49e97240] Enum	/Script/Engine.EMeshScreenAlignment
-IsA_UEnum
 [00000017c49e972a0] Enum	/Script/Engine.ETrailsRenderAxisOption
-IsA_UEnum
 [00000017c49e97300] Enum	/Script/Engine.EParticleScreenAlignment
-IsA_UEnum
 [00000017c49e97360] Enum	/Script/Engine.EParticleSystemOcclusionBoundsMethod
-IsA_UEnum
 [00000017c49e973c0] Enum	/Script/Engine.ParticleSystemLODMethod
-IsA_UEnum
 [00000017c49e97420] Enum	/Script/Engine.EParticleSystemUpdateMode
-IsA_UEnum
 [00000017c49e97480] Enum	/Script/Engine.EParticleEventType
-IsA_UEnum
 [00000017c49e974e0] Enum	/Script/Engine.ParticleReplayState
-IsA_UEnum
 [00000017c49e97540] Enum	/Script/Engine.EParticleSysParamType
-IsA_UEnum
 [00000017c49e975a0] Enum	/Script/Engine.ESettingsLockedAxis
-IsA_UEnum
 [00000017c49e97600] Enum	/Script/Engine.ESettingsDOF
-IsA_UEnum
 [00000017c49e97660] Enum	/Script/Engine.EFrictionCombineMode
-IsA_UEnum
 [00000017c49e976c0] Enum	/Script/Engine.EViewTargetBlendFunction
-IsA_UEnum
 [00000017c49e97720] Enum	/Script/Engine.EDynamicForceFeedbackAction
-IsA_UEnum
 [00000017c49e97780] Enum	/Script/Engine.ERendererStencilMask
-IsA_UEnum
 [00000017c49e977e0] Enum	/Script/Engine.EHasCustomNavigableGeometry
-IsA_UEnum
 [00000017c49e97840] Enum	/Script/Engine.ECanBeCharacterBase
-IsA_UEnum
 [00000017c49e978a0] Enum	/Script/Engine.ERichCurveExtrapolation
-IsA_UEnum
 [00000017c49e97900] Enum	/Script/Engine.ERichCurveInterpMode
-IsA_UEnum
 [00000017c49e97960] Enum	/Script/Engine.EReflectionSourceType
-IsA_UEnum
 [00000017c49e979c0] Enum	/Script/Engine.EDefaultBackBufferPixelFormat
-IsA_UEnum
 [00000017c49e97a20] Enum	/Script/Engine.EAutoExposureMethodUI
-IsA_UEnum
 [00000017c49e97a80] Enum	/Script/Engine.EAlphaChannelMode
-IsA_UEnum
 [00000017c49e97ae0] Enum	/Script/Engine.EEarlyZPass
-IsA_UEnum
 [00000017c49e97b40] Enum	/Script/Engine.ECustomDepthStencil
-IsA_UEnum
 [00000017c49e97ba0] Enum	/Script/Engine.EMobileMSAASampleCount
-IsA_UEnum
 [00000017c49e97c00] Enum	/Script/Engine.ECompositingSampleCount
-IsA_UEnum
 [00000017c49e97c60] Enum	/Script/Engine.EClearSceneOptions
-IsA_UEnum
 [00000017c49e97cc0] Enum	/Script/Engine.EReporterLineStyle
-IsA_UEnum
 [00000017c49e97d20] Enum	/Script/Engine.ELegendPosition
-IsA_UEnum
 [00000017c49e97d80] Enum	/Script/Engine.EGraphDataStyle
-IsA_UEnum
 [00000017c49e97de0] Enum	/Script/Engine.EGraphAxisStyle
-IsA_UEnum
 [00000017c49e97e40] Enum	/Script/Engine.ERichCurveKeyTimeCompressionFormat
-IsA_UEnum
 [00000017c49e97ea0] Enum	/Script/Engine.ERichCurveCompressionFormat
-IsA_UEnum
 [00000017c49e97f00] Enum	/Script/Engine.ERichCurveTangentWeightMode
-IsA_UEnum
 [00000017c49e97f60] Enum	/Script/Engine.ERichCurveTangentMode
-IsA_UEnum
 [00000017c49e97fc0] Enum	/Script/Engine.EConstraintTransform
-IsA_UEnum
 [00000017c49e98020] Enum	/Script/Engine.EControlConstraint
-IsA_UEnum
 [00000017c49e98080] Enum	/Script/Engine.ERootMotionFinishVelocityMode
-IsA_UEnum
 [00000017c49e980e0] Enum	/Script/Engine.ERootMotionSourceSettingsFlags
-IsA_UEnum
 [00000017c49e98140] Enum	/Script/Engine.ERootMotionSourceStatusFlags
-IsA_UEnum
 [00000017c49e981a0] Enum	/Script/Engine.ERootMotionAccumulateMode
-IsA_UEnum
 [00000017c49e98200] Enum	/Script/Engine.EReflectedAndRefractedRayTracedShadows
-IsA_UEnum
 [00000017c49e98260] Enum	/Script/Engine.ETranslucencyType
-IsA_UEnum
 [00000017c49e982c0] Enum	/Script/Engine.EReflectionsType
-IsA_UEnum
 [00000017c49e98320] Enum	/Script/Engine.ELightUnits
-IsA_UEnum
 [00000017c49e98380] Enum	/Script/Engine.EBloomMethod
-IsA_UEnum
 [00000017c49e983e0] Enum	/Script/Engine.EAutoExposureMethod
-IsA_UEnum
 [00000017c49e98440] Enum	/Script/Engine.EAntiAliasingMethod
-IsA_UEnum
 [00000017c49e984a0] Enum	/Script/Engine.EDepthOfFieldMethod
-IsA_UEnum
 [00000017c49e98500] Enum	/Script/Engine.ESceneCapturePrimitiveRenderMode
-IsA_UEnum
 [00000017c49e98560] Enum	/Script/Engine.EMaterialProperty
-IsA_UEnum
 [00000017c49e985c0] Enum	/Script/Engine.EPhysicsTransformUpdateMode
-IsA_UEnum
 [00000017c49e98620] Enum	/Script/Engine.EAnimationMode
-IsA_UEnum
 [00000017c49e98680] Enum	/Script/Engine.EKinematicBonesUpdateToPhysics
-IsA_UEnum
 [00000017c49e986e0] Enum	/Script/Engine.EAnimCurveType
-IsA_UEnum
 [00000017c49e98740] Enum	/Script/Engine.EBoneFilterActionOption
-IsA_UEnum
 [00000017c49e987a0] Enum	/Script/Engine.SkeletalMeshOptimizationImportance
-IsA_UEnum
 [00000017c49e98800] Enum	/Script/Engine.SkeletalMeshOptimizationType
-IsA_UEnum
 [00000017c49e98860] Enum	/Script/Engine.SkeletalMeshTerminationCriterion
-IsA_UEnum
 [00000017c49e988c0] Enum	/Script/Engine.EBoneTranslationRetargetingMode
-IsA_UEnum
 [00000017c49e98920] Enum	/Script/Engine.EBoneSpaces
-IsA_UEnum
 [00000017c49e98980] Enum	/Script/Engine.EVisibilityBasedAnimTickOption
-IsA_UEnum
 [00000017c49e989e0] Enum	/Script/Engine.EPhysBodyOp
-IsA_UEnum
 [00000017c49e98a40] Enum	/Script/Engine.EBoneVisibilityStatus
-IsA_UEnum
 [00000017c49e98aa0] Enum	/Script/Engine.ESkyLightSourceType
-IsA_UEnum
 [00000017c49e98b00] Enum	/Script/Engine.EReverbSendMethod
-IsA_UEnum
 [00000017c49e98b60] Enum	/Script/Engine.EAirAbsorptionMethod
-IsA_UEnum
 [00000017c49e98bc0] Enum	/Script/Engine.ESoundSpatializationAlgorithm
-IsA_UEnum
 [00000017c49e98c20] Enum	/Script/Engine.ESoundDistanceCalc
-IsA_UEnum
 [00000017c49e98c80] Enum	/Script/Engine.EAudioOutputTarget
-IsA_UEnum
 [00000017c49e98ce0] Enum	/Script/Engine.EMaxConcurrentResolutionRule
-IsA_UEnum
 [00000017c49e98d40] Enum	/Script/Engine.ESoundGroup
-IsA_UEnum
 [00000017c49e98da0] Enum	/Script/Engine.ModulationParamMode
-IsA_UEnum
 [00000017c49e98e00] Enum	/Script/Engine.ESourceBusChannels
-IsA_UEnum
 [00000017c49e98e60] Enum	/Script/Engine.EAudioRecordingExportType
-IsA_UEnum
 [00000017c49e98ec0] Enum	/Script/Engine.ESubmixChannelFormat
-IsA_UEnum
 [00000017c49e98f20] Enum	/Script/Engine.ESoundWaveFFTSize
-IsA_UEnum
 [00000017c49e98f80] Enum	/Script/Engine.EDecompressionType
-IsA_UEnum
 [00000017c49e98fe0] Enum	/Script/Engine.ESplineCoordinateSpace
-IsA_UEnum
 [00000017c49e99040] Enum	/Script/Engine.ESplinePointType
-IsA_UEnum
 [00000017c49e990a0] Enum	/Script/Engine.ESplineMeshAxis
-IsA_UEnum
 [00000017c49e99100] Enum	/Script/Engine.EOptimizationType
-IsA_UEnum
 [00000017c49e99160] Enum	/Script/Engine.EImportanceLevel
-IsA_UEnum
 [00000017c49e991c0] Enum	/Script/Engine.ENormalMode
-IsA_UEnum
 [00000017c49e99220] Enum	/Script/Engine.EStereoLayerShape
-IsA_UEnum
 [00000017c49e99280] Enum	/Script/Engine.EStereoLayerType
-IsA_UEnum
 [00000017c49e992e0] Enum	/Script/Engine.EOpacitySourceMode
-IsA_UEnum
 [00000017c49e99340] Enum	/Script/Engine.ESubUVBoundingVertexCount
-IsA_UEnum
 [00000017c49e993a0] Enum	/Script/Engine.EVerticalTextAligment
-IsA_UEnum
 [00000017c49e99400] Enum	/Script/Engine.EHorizTextAligment
-IsA_UEnum
 [00000017c49e99460] Enum	/Script/Engine.ETextureCompressionQuality
-IsA_UEnum
 [00000017c49e994c0] Enum	/Script/Engine.ETextureSourceFormat
-IsA_UEnum
 [00000017c49e99520] Enum	/Script/Engine.ETextureSourceArtType
-IsA_UEnum
 [00000017c49e99580] Enum	/Script/Engine.ETextureMipCount
-IsA_UEnum
 [00000017c49e995e0] Enum	/Script/Engine.ECompositeTextureMode
-IsA_UEnum
 [00000017c49e99640] Enum	/Script/Engine.TextureAddress
-IsA_UEnum
 [00000017c49e996a0] Enum	/Script/Engine.TextureFilter
-IsA_UEnum
 [00000017c49e99700] Enum	/Script/Engine.TextureCompressionSettings
-IsA_UEnum
 [00000017c49e99760] Enum	/Script/Engine.ETextureSamplerFilter
-IsA_UEnum
 [00000017c49e997c0] Enum	/Script/Engine.ETexturePowerOfTwoSetting
-IsA_UEnum
 [00000017c49e99820] Enum	/Script/Engine.TextureMipGenSettings
-IsA_UEnum
 [00000017c49e99880] Enum	/Script/Engine.TextureGroup
-IsA_UEnum
 [00000017c49e998e0] Enum	/Script/Engine.ETextureRenderTargetFormat
-IsA_UEnum
 [00000017c49e99940] Enum	/Script/Engine.ETimecodeProviderSynchronizationState
-IsA_UEnum
 [00000017c49e999a0] Enum	/Script/Engine.ETimelineDirection
-IsA_UEnum
 [00000017c49e99a00] Enum	/Script/Engine.ETimelineLengthMode
-IsA_UEnum
 [00000017c49e99a60] Enum	/Script/Engine.ETimeStretchCurveMapping
-IsA_UEnum
 [00000017c49e99ac0] Enum	/Script/Engine.ETwitterIntegrationDelegate
-IsA_UEnum
 [00000017c49e99b20] Enum	/Script/Engine.ETwitterRequestMethod
-IsA_UEnum
 [00000017c49e99b80] Enum	/Script/Engine.EUserDefinedStructureStatus
-IsA_UEnum
 [00000017c49e99be0] Enum	/Script/Engine.EUIScalingRule
-IsA_UEnum
 [00000017c49e99c40] Enum	/Script/Engine.ERenderFocusRule
-IsA_UEnum
 [00000017c49e99ca0] Enum	/Script/Engine.EVectorFieldConstructionOp
-IsA_UEnum
 [00000017c49e99d00] Enum	/Script/Engine.PageTableFormat
-IsA_UEnum
 [00000017c49e99d60] Enum	/Script/Engine.EWindSourceType
-IsA_UEnum
 [00000017c49e99dc0] Enum	/Script/Engine.EPSCPoolMethod
-IsA_UEnum
 [00000017c49e99e20] Enum	/Script/Engine.EVolumeLightingMethod
-IsA_UEnum
 [00000017c49e99e80] Enum	/Script/Engine.EVisibilityAggressiveness
-IsA_UEnum
 [00000017c49e99ee0] Enum	/Script/MediaUtils.EMediaPlayerOptionBooleanOverride
-IsA_UEnum
 [00000017c49e99f40] Enum	/Script/ClothingSystemRuntime.EClothingWindMethod
-IsA_UEnum
 [00000017c49e99fa0] Enum	/Script/ClothingSystemRuntime.MaskTarget_PhysMesh
 IsA_UFunction
 [00000017c49e9a000] DelegateFunction	/Script/MediaAssets.OnMediaPlayerMediaEvent__DelegateSignature
@@ -9297,17 +8679,11 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e9a210] DelegateFunction	/Script/MediaAssets.OnMediaPlayerMediaOpenFailed__DelegateSignature
 [00000017c49e9a2e0] StrProperty	/Script/MediaAssets.OnMediaPlayerMediaOpenFailed__DelegateSignature.FailedUrl
-IsA_UEnum
 [00000017c49e9a350] Enum	/Script/MediaAssets.EMediaWebcamCaptureDeviceFilter
-IsA_UEnum
 [00000017c49e9a3b0] Enum	/Script/MediaAssets.EMediaVideoCaptureDeviceFilter
-IsA_UEnum
 [00000017c49e9a410] Enum	/Script/MediaAssets.EMediaAudioCaptureDeviceFilter
-IsA_UEnum
 [00000017c49e9a470] Enum	/Script/MediaAssets.EMediaPlayerTrack
-IsA_UEnum
 [00000017c49e9a4d0] Enum	/Script/MediaAssets.EMediaSoundComponentFFTSize
-IsA_UEnum
 [00000017c49e9a530] Enum	/Script/MediaAssets.EMediaSoundChannels
 IsA_UFunction
 [00000017c49e9a590] DelegateFunction	/Script/NavigationSystem.OnNavigationPathUpdated__DelegateSignature
@@ -9316,11 +8692,8 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e9a760] DelegateFunction	/Script/NavigationSystem.OnNavDataGenericEvent__DelegateSignature
 [00000017c49e9a830] ObjectProperty	/Script/NavigationSystem.OnNavDataGenericEvent__DelegateSignature.NavData
-IsA_UEnum
 [00000017c49e9a8b0] Enum	/Script/NavigationSystem.ERuntimeGenerationType
-IsA_UEnum
 [00000017c49e9a910] Enum	/Script/NavigationSystem.ENavCostDisplay
-IsA_UEnum
 [00000017c49e9a970] Enum	/Script/NavigationSystem.ERecastPartitioning
 IsA_UFunction
 [00000017c49e9a9d0] Function	/Script/GameplayTasks.GameplayTask.EndTask
@@ -9330,7 +8703,6 @@ IsA_UFunction
 [00000017c49e9ab70] Function	/Script/GameplayTasks.GameplayTask.ReadyForActivation
 [00000017c49e9ac40] ObjectProperty	/Script/GameplayTasks.GameplayTask.ChildTask
 [00000017c49e9acc0] EnumProperty	/Script/GameplayTasks.GameplayTask.ResourceOverlapPolicy
-IsA_UEnum
 [00000017c49e9ad40] Enum	/Script/GameplayTasks.ETaskResourceOverlapPolicy
 [00000017c49e9ada0] ByteProperty	/Script/GameplayTasks.GameplayTask.ResourceOverlapPolicy.UnderlyingType
 [00000017c49e9ae20] NameProperty	/Script/GameplayTasks.GameplayTask.InstanceName
@@ -9356,14 +8728,11 @@ IsA_UFunction
 [00000017c49e9b6d0] FloatProperty	/Script/GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay.Time
 [00000017c49e9b740] InterfaceProperty	/Script/GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay.TaskOwner
 [00000017c49e9b7c0] MulticastDelegateProperty	/Script/GameplayTasks.GameplayTask_WaitDelay.OnFinish
-IsA_UEnum
 [00000017c49e9b840] Enum	/Script/GameplayTasks.EGameplayTaskState
-IsA_UEnum
 [00000017c49e9b8a0] Enum	/Script/GameplayTasks.EGameplayTaskRunResult
 IsA_UFunction
 [00000017c49e9b900] DelegateFunction	/Script/AIModule.AIMoveCompletedSignature__DelegateSignature
 [00000017c49e9b9d0] ByteProperty	/Script/AIModule.AIMoveCompletedSignature__DelegateSignature.Result
-IsA_UEnum
 [00000017c49e9ba50] Enum	/Script/AIModule.EPathFollowingResult
 [00000017c49e9bab0] StructProperty	/Script/AIModule.AIMoveCompletedSignature__DelegateSignature.RequestID
 IsA_UScriptStruct
@@ -9376,7 +8745,6 @@ IsA_UFunction
 IsA_UFunction
 [00000017c49e9be10] DelegateFunction	/Script/AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
 [00000017c49e9bee0] ByteProperty	/Script/AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature.QueryStatus
-IsA_UEnum
 [00000017c49e9bf60] Enum	/Script/AIModule.EEnvQueryStatus
 [00000017c49e9bfc0] ObjectProperty	/Script/AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature.QueryInstance
 IsA_UFunction
@@ -9470,123 +8838,64 @@ IsA_UFunction
 [00000017c49e9e710] DelegateFunction	/Script/AIModule.MoveTaskCompletedSignature__DelegateSignature
 [00000017c49e9e7e0] ObjectProperty	/Script/AIModule.MoveTaskCompletedSignature__DelegateSignature.AIController
 [00000017c49e9e860] ByteProperty	/Script/AIModule.MoveTaskCompletedSignature__DelegateSignature.Result
-IsA_UEnum
 [00000017c49e9e8e0] Enum	/Script/AIModule.EAISenseNotifyType
-IsA_UEnum
 [00000017c49e9e940] Enum	/Script/AIModule.EAITaskPriority
-IsA_UEnum
 [00000017c49e9e9a0] Enum	/Script/AIModule.EGenericAICheck
-IsA_UEnum
 [00000017c49e9ea00] Enum	/Script/AIModule.EAILockSource
-IsA_UEnum
 [00000017c49e9ea60] Enum	/Script/AIModule.EAIRequestPriority
-IsA_UEnum
 [00000017c49e9eac0] Enum	/Script/AIModule.EPawnActionEventType
-IsA_UEnum
 [00000017c49e9eb20] Enum	/Script/AIModule.EPawnActionResult
-IsA_UEnum
 [00000017c49e9eb80] Enum	/Script/AIModule.EPawnActionAbortState
-IsA_UEnum
 [00000017c49e9ebe0] Enum	/Script/AIModule.FAIDistanceType
-IsA_UEnum
 [00000017c49e9ec40] Enum	/Script/AIModule.EAIOptionFlag
-IsA_UEnum
 [00000017c49e9eca0] Enum	/Script/AIModule.EBTFlowAbortMode
-IsA_UEnum
 [00000017c49e9ed00] Enum	/Script/AIModule.EBTNodeResult
-IsA_UEnum
 [00000017c49e9ed60] Enum	/Script/AIModule.ETextKeyOperation
-IsA_UEnum
 [00000017c49e9edc0] Enum	/Script/AIModule.EArithmeticKeyOperation
-IsA_UEnum
 [00000017c49e9ee20] Enum	/Script/AIModule.EBasicKeyOperation
-IsA_UEnum
 [00000017c49e9ee80] Enum	/Script/AIModule.EBTParallelMode
-IsA_UEnum
 [00000017c49e9eee0] Enum	/Script/AIModule.EBTDecoratorLogic
-IsA_UEnum
 [00000017c49e9ef40] Enum	/Script/AIModule.EBTChildIndex
-IsA_UEnum
 [00000017c49e9efa0] Enum	/Script/AIModule.EBTBlackboardRestart
-IsA_UEnum
 [00000017c49e9f000] Enum	/Script/AIModule.EBlackBoardEntryComparison
-IsA_UEnum
 [00000017c49e9f060] Enum	/Script/AIModule.EPathExistanceQueryType
-IsA_UEnum
 [00000017c49e9f0c0] Enum	/Script/AIModule.EPointOnCircleSpacingMethod
-IsA_UEnum
 [00000017c49e9f120] Enum	/Script/AIModule.EEQSNormalizationType
-IsA_UEnum
 [00000017c49e9f180] Enum	/Script/AIModule.EEnvTestDistance
-IsA_UEnum
 [00000017c49e9f1e0] Enum	/Script/AIModule.EEnvTestDot
-IsA_UEnum
 [00000017c49e9f240] Enum	/Script/AIModule.EEnvTestPathfinding
-IsA_UEnum
 [00000017c49e9f2a0] Enum	/Script/AIModule.EEnvQueryTestClamping
-IsA_UEnum
 [00000017c49e9f300] Enum	/Script/AIModule.EEnvDirection
-IsA_UEnum
 [00000017c49e9f360] Enum	/Script/AIModule.EEnvOverlapShape
-IsA_UEnum
 [00000017c49e9f3c0] Enum	/Script/AIModule.EEnvTraceShape
-IsA_UEnum
 [00000017c49e9f420] Enum	/Script/AIModule.EEnvQueryTrace
-IsA_UEnum
 [00000017c49e9f480] Enum	/Script/AIModule.EAIParamType
-IsA_UEnum
 [00000017c49e9f4e0] Enum	/Script/AIModule.EEnvQueryParam
-IsA_UEnum
 [00000017c49e9f540] Enum	/Script/AIModule.EEnvQueryRunMode
-IsA_UEnum
 [00000017c49e9f5a0] Enum	/Script/AIModule.EEnvTestScoreOperator
-IsA_UEnum
 [00000017c49e9f600] Enum	/Script/AIModule.EEnvTestFilterOperator
-IsA_UEnum
 [00000017c49e9f660] Enum	/Script/AIModule.EEnvTestCost
-IsA_UEnum
 [00000017c49e9f6c0] Enum	/Script/AIModule.EEnvTestWeight
-IsA_UEnum
 [00000017c49e9f720] Enum	/Script/AIModule.EEnvTestScoreEquation
-IsA_UEnum
 [00000017c49e9f780] Enum	/Script/AIModule.EEnvTestFilterType
-IsA_UEnum
 [00000017c49e9f7e0] Enum	/Script/AIModule.EEnvTestPurpose
-IsA_UEnum
 [00000017c49e9f840] Enum	/Script/AIModule.EEnvQueryHightlightMode
-IsA_UEnum
 [00000017c49e9f8a0] Enum	/Script/AIModule.ETeamAttitude
-IsA_UEnum
 [00000017c49e9f900] Enum	/Script/AIModule.EPathFollowingRequestResult
-IsA_UEnum
 [00000017c49e9f960] Enum	/Script/AIModule.EPathFollowingAction
-IsA_UEnum
 [00000017c49e9f9c0] Enum	/Script/AIModule.EPathFollowingStatus
-IsA_UEnum
 [00000017c49e9fa20] Enum	/Script/AIModule.EPawnActionFailHandling
-IsA_UEnum
 [00000017c49e9fa80] Enum	/Script/AIModule.EPawnSubActionTriggeringPolicy
-IsA_UEnum
 [00000017c49e9fae0] Enum	/Script/AIModule.EPawnActionMoveMode
-IsA_UEnum
 [00000017c49e9fb40] Enum	/Script/GeometryCollectionCore.EGeometryCollectionCacheType
-IsA_UEnum
 [00000017c49e9fba0] Enum	/Script/FieldSystemCore.EFieldPhysicsDefaultFields
-IsA_UEnum
 [00000017c49e9fc00] Enum	/Script/FieldSystemCore.EFieldPhysicsType
-IsA_UEnum
 [00000017c49e9fc60] Enum	/Script/FieldSystemCore.EFieldOperationType
-IsA_UEnum
 [00000017c49e9fcc0] Enum	/Script/FieldSystemCore.ESetMaskConditionType
-IsA_UEnum
 [00000017c49e9fd20] Enum	/Script/GeometryCollectionSimulationCore.EEmissionPatternTypeEnum
-IsA_UEnum
 [00000017c49e9fd80] Enum	/Script/GeometryCollectionSimulationCore.EInitialVelocityTypeEnum
-IsA_UEnum
 [00000017c49e9fde0] Enum	/Script/GeometryCollectionSimulationCore.EObjectTypeEnum
-IsA_UEnum
 [00000017c49e9fe40] Enum	/Script/GeometryCollectionSimulationCore.EImplicitTypeEnum
-IsA_UEnum
 [00000017c49e9fea0] Enum	/Script/GeometryCollectionSimulationCore.ECollisionTypeEnum
 IsA_UScriptStruct
 [00000017c49e9ff00] ScriptStruct	/Script/OnlineSubsystem.NamedInterfaceDef
@@ -45355,7 +44664,6 @@ IsA_UClass
 [00000017c4a2df040] TriggerVolume	/Script/Engine.Default__TriggerVolume
 [00000017c4a2df3b0] BrushComponent	/Script/Engine.Default__TriggerVolume.BrushComponent0
 [00000017c4a2df940] TwitterIntegrationBase	/Script/Engine.Default__TwitterIntegrationBase
-IsA_UEnum
 [00000017c4a2df980] UserDefinedEnum	/Script/Engine.Default__UserDefinedEnum
 IsA_UScriptStruct
 [00000017c4a2dfa30] UserDefinedStruct	/Script/Engine.Default__UserDefinedStruct
@@ -51248,16 +50556,7 @@ IsA_UClass
 [00000017c56279a00] BlackboardComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterAIController.BlackboardComp
 [00000017c64bbd980] BehaviorTreeComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterAIController.BehaviorComp
 [00000017c781c32b0] ShooterPlayerState	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterPlayerState
-[00000017c5eba8b20] PlayerPawn_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C
-[00000017c646ee020] CapsuleComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CollisionCylinder
-[00000017c5eb96930] ShooterCharacterMovement	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharMoveComp
-[00000017c4ce41a80] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0
-[00000017c4ce42740] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P
 [00000017c4cef0600] BodySetup	/Game/Blueprints/Pawns/PlayerPawn.Default__PlayerPawn_C.CollisionCylinder.BodySetup
-[00000017c63d660a0] HeroTPP_AnimBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.HeroTPP_AnimBlueprint_C
-[00000017c6adceab0] HeroFPP_AnimationBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.HeroFPP_AnimationBlueprint_C
-[00000017c63e8f940] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.MaterialInstanceDynamic
-[00000017c63e89880] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.MaterialInstanceDynamic
 [00000017c5eb3f560] BotPawn_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.BotPawn_C
 [00000017c649593a0] CapsuleComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.BotPawn_C.CollisionCylinder
 [00000017c538bb0a0] ShooterCharacterMovement	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.BotPawn_C.CharMoveComp
@@ -51301,63 +50600,24 @@ IsA_UClass
 [00000017c648b40c0] TaskAlwaysTrue_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterAIController.BehaviorComp.TaskAlwaysTrue_C
 [00000017c648b4180] TaskAlwaysTrue_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterAIController.BehaviorComp.TaskAlwaysTrue_C
 [00000017c648b67c0] TaskAlwaysTrue_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterAIController.BehaviorComp.TaskAlwaysTrue_C
-[00000017c614920e0] PlayerPawn_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C
-[00000017c0bf5cd00] CapsuleComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CollisionCylinder
-[00000017c555b90e0] ShooterCharacterMovement	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharMoveComp
-[00000017c5458cd00] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0
-[00000017c54583400] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P
-[00000017c5d60c040] HeroTPP_AnimBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.HeroTPP_AnimBlueprint_C
-[00000017c772a1590] HeroFPP_AnimationBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.HeroFPP_AnimationBlueprint_C
-[00000017c64070100] WeapGun_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C
-[00000017c54581a80] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.WeaponMesh1P
-[00000017c54584d80] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.WeaponMesh3P
-[00000017c49b63a60] WeapLauncher_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C
-[00000017c545dc040] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C.WeaponMesh1P
-[00000017c544373c0] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C.WeaponMesh3P
-[00000017c6417b380] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.MaterialInstanceDynamic
-[00000017c6ac40280] InputComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnInputComponent0
-[00000017c63c53580] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.MaterialInstanceDynamic
+[00000017c0f38c870] AudioComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.AudioComponent
+[00000017c0f8c98d0] AudioComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.AudioComponent
+[00000017c5e8f7480] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.MaterialInstanceDynamic
+[00000017c77da7180] InputComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnInputComponent0
+[00000017c64174300] MaterialInstanceDynamic	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.MaterialInstanceDynamic
+[00000017c618d5a40] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C.WeaponMesh3P
+[00000017c5d52cd00] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C.WeaponMesh1P
+[00000017c0bf5e020] WeapLauncher_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapLauncher_C
+[00000017c5e6ce680] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.WeaponMesh3P
+[00000017c5ec83400] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.WeaponMesh1P
+[00000017c0bf56700] WeapGun_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C
+[00000017c6adcaac0] HeroFPP_AnimationBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P.HeroFPP_AnimationBlueprint_C
+[00000017c63d60100] HeroTPP_AnimBlueprint_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0.HeroTPP_AnimBlueprint_C
+[00000017c5ec80dc0] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.PawnMesh1P
+[00000017c5d520dc0] SkeletalMeshComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharacterMesh0
+[00000017c0f8c5160] ShooterCharacterMovement	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CharMoveComp
+[00000017c0f7cb380] CapsuleComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C.CollisionCylinder
+[00000017c0f40c040] PlayerPawn_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.PlayerPawn_C
 [00000017c0be6fe80] WeapGun_FireCameraShake_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterPlayerCameraManager.CameraModifier_CameraShake.WeapGun_FireCameraShake_C
-[00000017c5470c940] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c0c173d00] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c0ac4aac0] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c0abb9ba0] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c7712fd80] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c0ac4c900] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
 [00000017c76d3cb80] WeapGun_FireCameraShake_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterPlayerCameraManager.CameraModifier_CameraShake.WeapGun_FireCameraShake_C
-[00000017c5470c4b0] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c6ac57900] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c0bfacbc0] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c0abbd260] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c7709ba00] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c0bfd4240] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c0fad2500] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c0c176500] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c5e3a6b80] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c5d5f4980] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c4cef1c80] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c5eb9a0c0] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c55772400] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c5ec66930] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.ParticleSystemComponent
-[00000017c6111f020] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_C.ParticleSystemComponent
-[00000017c0ac0ade0] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c4cefc680] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c5ec60200] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c0ac4d6c0] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c0fad8040] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c4cefd300] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c5ec611e0] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c0ac46080] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
 [00000017c0be6c100] WeapGun_FireCameraShake_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.ShooterPlayerCameraManager.CameraModifier_CameraShake.WeapGun_FireCameraShake_C
-[00000017c0ac0e4a0] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c7709c400] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c650bc080] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c0bfa26c0] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c651a52a0] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c7709c900] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c650b31a0] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c53e76e40] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
-[00000017c54702070] WeapGun_Impacts_C	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C
-[00000017c0c176f00] SceneComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WeapGun_Impacts_C.DefaultSceneRoot
-[00000017c650b5160] ParticleSystemComponent	/Game/Maps/Sanctuary.Sanctuary.PersistentLevel.WorldInfo.ParticleSystemComponent
-[00000017c0bfd73c0] DecalComponent	/Game/Maps/Sanctuary.Sanctuary.DecalComponent
