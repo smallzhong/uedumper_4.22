@@ -17,6 +17,16 @@ void 初始化驱动()
 	MY_ASSERT(g_hDevice != INVALID_HANDLE_VALUE);
 }
 
+bool Read(void* Addr, void* buf, int size)
+{
+	//return ReadProcessMemory(hProcess, Addr, buf, (SIZE_T)size, NULL);
+	UserData Temp = { (DWORD)g_pid, (DWORD64)Addr, (DWORD)size, buf };
+	DWORD RetSize = 0;
+	BOOLEAN status = DeviceIoControl(g_hDevice, READ, &Temp, sizeof(UserData), NULL, 0, &RetSize, 0);
+	MY_ASSERT(status != TRUE);
+	return true;
+}
+
 void init()
 {
 	HWND hWnd = FindWindowA("UnrealWindow", NULL);

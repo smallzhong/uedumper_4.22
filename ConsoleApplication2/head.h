@@ -41,3 +41,13 @@ using namespace std;
         if (!(x))                            \
             EXIT_ERROR("ASSERTION failed!"); \
     } while (0)
+
+typedef struct _UserData
+{
+    DWORD Pid;			//要读写的进程ID
+    DWORD64 Address;	//要读写的地址
+    DWORD Size;			//读写长度
+    PVOID Data;			//数据存放位置
+}UserData, * PUserData;
+
+#define READ	CTL_CODE(FILE_DEVICE_UNKNOWN,3333,METHOD_BUFFERED,FILE_ANY_ACCESS)
