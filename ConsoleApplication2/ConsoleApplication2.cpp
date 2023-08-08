@@ -10,6 +10,9 @@ const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下
 const int g_TUObjectArray_NumElements_offset = 0x14; // 以此类推。
 const int g_TUObjectArray_NumChunks_offset = 0x1c; // 以此类推。
 const int g_FUObjectItem_Object_offset = 0; // 以此类推。
+const int g_UObject_Name_offset = 0x18; // 以此类推。
+const int g_UObject_Class_offset = 0x10; // 以此类推。
+const int g_UObject_Outer_offset = 0x20; // 以此类推。
 
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
@@ -123,6 +126,17 @@ ULONG64 get_uobject_addr_by_id(ULONG64 TUObjectArray_addr, ULONG64 id)
 	return read8(item + g_FUObjectItem_Object_offset);
 }
 
+//ULONG64 FindObject(string fullName)
+//{
+//
+//}
+
+string get_object_fullname(ULONG64 uobject_addr)
+{
+	ULONG32 NameId = read4(uobject_addr + g_UObject_Name_offset);
+	return get_name(NameId);
+}
+
 void 测试()
 {
 	init();
@@ -131,8 +145,11 @@ void 测试()
 	for (int i = 0; i < get_num_elememts(); i++)
 	{
 		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
-		cout << hex << cur_uobject_addr << endl;
+		if (!cur_uobject_addr)
+			continue;
+		cout << get_object_fullname(cur_uobject_addr) << endl;
 	}
+
 }
 
 int main()

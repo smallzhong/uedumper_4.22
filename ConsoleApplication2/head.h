@@ -61,3 +61,4 @@ bool ReadMemory(ULONG64 Addr, void* buf, int size);
 void init();
 ULONG32 read4(PVOID addr);
 ULONG64 read8(PVOID addr);
+string get_name(uint32_t Index);
