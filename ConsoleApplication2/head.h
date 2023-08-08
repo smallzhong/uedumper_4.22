@@ -63,11 +63,17 @@ public:
     int32_t ArrayMax;
 };
 
+typedef struct _FName
+{
+    uint32_t ComparisonIndex;
+    uint32_t Number;
+} FName, * PFName;
+
 template<typename A ,typename B>
 struct TPair
 {
-    A Key;
-    B Value;
+    A first;
+    B second;
 };
 
 #define READ	CTL_CODE(FILE_DEVICE_UNKNOWN,3333,METHOD_BUFFERED,FILE_ANY_ACCESS)

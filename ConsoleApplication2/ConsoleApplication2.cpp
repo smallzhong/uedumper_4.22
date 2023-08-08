@@ -18,9 +18,11 @@ const int g_UStruct_SuperStruct_offset = 0x40; // 以此类推。
 const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
 const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
 const int g_FNameEntry_AnsiName_or_WideName_offset = 0xc; // 以此类推。
+const int g_UEnum_Names_offset = 0x40; // 以此类推
 
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
+const int g_UEnum_Names_SizeEveryEntry = 0x10; // UEnum里面names的每一个项目的大小（相当于sizeof(TPair)）
 
 // 4.22的一些define
 const int ElementsPerChunk = 0x4000;
@@ -335,6 +337,21 @@ void dump_UEnum(ULONG64 uobject_addr)
 	string ClassName = "enum class " + get_object_name(uobject_addr) + " : ";
 	string Type = "uint8_t";
 	string Body = "";
+	uint32_t Max = INT32_MIN;
+
+	TArray<char*> Names = { 0 };
+	ReadMemory(uobject_addr + g_UEnum_Names_offset, &Names, sizeof(Names));
+
+	for (int i = 0; i < Names.ArrayNum; i++)
+	{
+		TPair<FName, ULONG64> cur_name;
+		ReadMemory((ULONG64)Names.Allocator + i * g_UEnum_Names_SizeEveryEntry, &cur_name, sizeof(cur_name));
+
+		string name = get_name(cur_name.first.ComparisonIndex);
+		uint32_t value = cur_name.second;
+
+		Body += name + " " + to_string(value) + "\n";
+	}
 
 	//if (Max > 256)
 	//	Type = "uint32_t";
