@@ -74,10 +74,10 @@ string get_name(uint32_t Index)
 	ULONG64 fname_ptr = read8(chunk_ptr + WithinChunkIndex * 8);
 
 	// TODO: 这里其实还有wide和ansi的判断，但是暂时没精力写。
-	PCHAR buf = (PCHAR)malloc(NAME_SIZE);
+	CHAR buf[NAME_SIZE];
 	ReadMemory((ULONG64)fname_ptr + 从fname开头到字符串位置的偏移, buf, NAME_SIZE);
 
-	return string();
+	return string(buf);
 }
 
 
@@ -85,6 +85,9 @@ string get_name(uint32_t Index)
 int main()
 {
 	init();
-	get_name(0);
+	for (int i = 0; i < 60000; i++)
+	{
+		cout << i << " " << get_name(i) << endl;
+	}
 }
 
