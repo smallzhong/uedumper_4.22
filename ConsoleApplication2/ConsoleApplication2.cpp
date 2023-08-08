@@ -6,6 +6,9 @@
 const ULONG64 g_base = 0x7FF616AC0000;
 const ULONG64 g_gname_offset = 0x2E6E0C0;
 const ULONG64 g_GUObjectArray_offset = 0x2B8CA60;
+const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下面ObjObjects成员的offset
+const int g_TUObjectArray_NumElements_offset = 0x14; // 以此类推。
+const int g_TUObjectArray_NumChunks_offset = 0x1c; // 以此类推。
 
 // 4.22的一些define
 const int ElementsPerChunk = 0x4000;
@@ -15,6 +18,8 @@ const int NAME_SIZE = 1024;
 DWORD g_pid = 0;
 HANDLE g_hDevice = NULL;
 
+map<int, string> g_name_table;
+
 
 void 初始化驱动()
 {
@@ -22,7 +27,7 @@ void 初始化驱动()
 	MY_ASSERT(g_hDevice != INVALID_HANDLE_VALUE);
 }
 
-bool ReadMemory(ULONG64 Addr, void *buf, int size)
+bool ReadMemory(ULONG64 Addr, void* buf, int size)
 {
 	//return ReadProcessMemory(hProcess, Addr, buf, (SIZE_T)size, NULL);
 	UserData Temp = { (DWORD)g_pid, (DWORD64)Addr, (DWORD)size, buf };
@@ -64,30 +69,56 @@ void init()
 
 string get_name(uint32_t Index)
 {
+	// 如果命中了就不用再手动查了。
+	if (g_name_table.count(Index) != 0)
+		return g_name_table[Index];
+
 	ULONG64 t_gname = read8((ULONG64)g_base + g_gname_offset);
-	
+
 	ULONG32 ChunkIndex = Index / ElementsPerChunk;
 	ULONG32 WithinChunkIndex = Index % ElementsPerChunk;
 
 	ULONG64 chunk_ptr = read8(t_gname + ChunkIndex * 8);
-    // 这里指向了FNameEntry
+	// 这里指向了FNameEntry
 	ULONG64 fname_ptr = read8(chunk_ptr + WithinChunkIndex * 8);
 
 	// TODO: 这里其实还有wide和ansi的判断，但是暂时没精力写。
 	CHAR buf[NAME_SIZE];
 	ReadMemory((ULONG64)fname_ptr + 从fname开头到字符串位置的偏移, buf, NAME_SIZE);
 
-	return string(buf);
+	string res = string(buf);
+	g_name_table[Index] = res;
+
+	return res;
 }
 
+// 获取gobjectarray里面有多少个element
+int get_num_elememts()
+{
+	static int res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = read4(g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset + g_TUObjectArray_NumElements_offset);
+	return res;
+}
 
+void 测试()
+{
+	init();
+
+	cout << get_num_elememts();
+}
 
 int main()
 {
-	init();
-	for (int i = 0; i < 60000; i++)
-	{
-		cout << i << " " << get_name(i) << endl;
-	}
+	clock_t start, end;
+	start = clock();
+
+	测试();
+
+	end = clock();
+	cout << "\n\n运行时间" << (double)(end - start) / CLOCKS_PER_SEC << endl;
 }
 

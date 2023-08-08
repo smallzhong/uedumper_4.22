@@ -11,6 +11,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <map>
+#include <string>
+#include <time.h>
 
 using namespace std;
 #pragma warning(disable : 4996)
