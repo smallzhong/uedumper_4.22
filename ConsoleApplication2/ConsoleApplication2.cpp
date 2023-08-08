@@ -349,12 +349,13 @@ void dump_UEnum(ULONG64 uobject_addr)
 
 		string name = get_name(cur_name.first.ComparisonIndex);
 		uint32_t value = cur_name.second;
+		Max = max(value, Max);
 
-		Body += name + " " + to_string(value) + "\n";
+		Body += "\t" + name + " " + to_string(value) + "\n";
 	}
 
-	//if (Max > 256)
-	//	Type = "uint32_t";
+	if (Max > 256)
+		Type = "uint32_t";
 
 	enum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "\n};\n\n");
 }
