@@ -19,13 +19,13 @@ const int g_UStruct_SuperStruct_offset = 0x40; // 以此类推。
 const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
 const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
 
+const int g_FNameEntry_AnsiName_or_WideName_offset = 0xc; // 以此类推。
 
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
 
 // 4.22的一些define
 const int ElementsPerChunk = 0x4000;
-const int 从fname开头到字符串位置的偏移 = 0xc;
 const int NAME_SIZE = 1024;
 
 DWORD g_pid = 0;
@@ -97,7 +97,7 @@ string get_name(uint32_t Index)
 
 	// TODO: 这里其实还有wide和ansi的判断，但是暂时没精力写。
 	CHAR buf[NAME_SIZE];
-	ReadMemory((ULONG64)fname_ptr + 从fname开头到字符串位置的偏移, buf, NAME_SIZE);
+	ReadMemory((ULONG64)fname_ptr + g_FNameEntry_AnsiName_or_WideName_offset, buf, NAME_SIZE);
 
 	string res = string(buf);
 	g_name_table[Index] = res;
