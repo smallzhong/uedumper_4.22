@@ -132,10 +132,35 @@ ULONG64 get_uobject_addr_by_id(ULONG64 TUObjectArray_addr, ULONG64 id)
 //
 //}
 
+ULONG64 get_object_outer(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UObject_Outer_offset);
+}
+
+ULONG64 get_object_class(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UObject_Class_offset);
+}
+
+
 string get_object_name(ULONG64 uobject_addr)
 {
 	ULONG32 NameId = read4(uobject_addr + g_UObject_Name_offset);
 	return get_name(NameId);
+}
+
+string get_object_fullName(ULONG64 uobject_addr)
+{
+	string temp = get_object_name(uobject_addr);
+	if (temp == "" || temp == "None")
+		return temp;
+
+	for (ULONG64 outer = get_object_outer(uobject_addr); outer; outer = get_object_outer(outer))
+	{
+		temp = get_object_name(outer) + "." + temp;
+	}
+
+	return get_object_name(get_object_class(uobject_addr)) + "\t" + temp;
 }
 
 void dump_objects()
@@ -148,8 +173,8 @@ void dump_objects()
 		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
 		if (!cur_uobject_addr)
 			continue;
-		string fullName = get_object_name(cur_uobject_addr);
-		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, fullName.c_str());
+		string name = get_object_fullName(cur_uobject_addr);
+		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, name.c_str());
 	}
 }
 
