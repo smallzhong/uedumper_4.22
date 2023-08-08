@@ -23,47 +23,16 @@ int File::fflush()
 }
 
 //void show_str(const char* pstr, ...)
-int File::fprintf(const char* pstr, ...)
+int File::fprintf(const char* format, ...)
 {
-    va_list ap;
-    va_start(ap, pstr);
+    va_list args;
 
-    // 1、计算得到长度
-    //---------------------------------------------------
-    // 返回 成功写入的字符个数
-    int count_write = snprintf(NULL, 0, pstr, ap);
-    va_end(ap);
+    va_start(args, format);
+    int ret = vfprintf(file, format, args);
+    va_end(args);
 
-    // 长度为空
-    if (0 >= count_write)
-        return -1;
+    return ret;
 
-    count_write++;
-
-    // 2、构造字符串再输出
-    //---------------------------------------------------
-    va_start(ap, pstr);
-
-    char* pbuf_out = NULL;
-    pbuf_out = (char*)malloc(count_write);
-    if (NULL == pbuf_out)
-    {
-        va_end(ap);
-        return -1;
-    }
-
-    // 构造输出
-    vsnprintf(pbuf_out, count_write, pstr, ap);
-    // 释放空间
-    va_end(ap);
-
-    // 输出结果
-    std::cout << "str = " << pbuf_out << "\n";
-    std::fprintf(file, pbuf_out);
-
-    // 释放内存空间
-    free(pbuf_out);
-    pbuf_out = NULL;
 }
 
 
