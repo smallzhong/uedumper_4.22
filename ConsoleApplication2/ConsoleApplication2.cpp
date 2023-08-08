@@ -14,11 +14,9 @@ const int g_FUObjectItem_Object_offset = 0; // 以此类推。
 const int g_UObject_Name_offset = 0x18; // 以此类推。
 const int g_UObject_Class_offset = 0x10; // 以此类推。
 const int g_UObject_Outer_offset = 0x20; // 以此类推。
-
 const int g_UStruct_SuperStruct_offset = 0x40; // 以此类推。
 const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
 const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
-
 const int g_FNameEntry_AnsiName_or_WideName_offset = 0xc; // 以此类推。
 
 
@@ -330,6 +328,13 @@ bool IsA_UScriptStruct(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
 	return FALSE;
 }
 
+File enum_logger("enum.txt");
+void dump_UEnum(ULONG64 uobject_addr)
+{
+	string FullName = "// " + get_object_fullName(uobject_addr) + "\n";
+	enum_logger.fprintf("%s\n", FullName.c_str());
+}
+
 void dump_objects()
 {
 	File objects("objects.txt");
@@ -344,7 +349,8 @@ void dump_objects()
 
 		if (IsA_UEnum(TUObjectArray_addr, cur_uobject_addr))
 		{
-			objects.fprintf("IsA_UEnum\n");
+			dump_UEnum(cur_uobject_addr);
+			//objects.fprintf("IsA_UEnum\n");
 		}
 		else if (IsA_UClass(TUObjectArray_addr, cur_uobject_addr))
 		{

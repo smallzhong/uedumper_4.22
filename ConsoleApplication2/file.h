@@ -2,12 +2,6 @@
 
 #include "head.h"
 
-/*
-* by ACC
-* bÕ¾Id : °µ²ØC
-* QÈº:417675203
-*/
-
 class File
 {
 public:

@@ -54,6 +54,22 @@ typedef struct _UserData
     PVOID Data;			//数据存放位置
 }UserData, * PUserData;
 
+template<typename T>
+class TArray
+{
+public:
+    T* Allocator;
+    int32_t ArrayNum;
+    int32_t ArrayMax;
+};
+
+template<typename A ,typename B>
+struct TPair
+{
+    A Key;
+    B Value;
+};
+
 #define READ	CTL_CODE(FILE_DEVICE_UNKNOWN,3333,METHOD_BUFFERED,FILE_ANY_ACCESS)
 
 
