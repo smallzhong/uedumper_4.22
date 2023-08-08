@@ -9,6 +9,10 @@ const ULONG64 g_GUObjectArray_offset = 0x2B8CA60;
 const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下面ObjObjects成员的offset
 const int g_TUObjectArray_NumElements_offset = 0x14; // 以此类推。
 const int g_TUObjectArray_NumChunks_offset = 0x1c; // 以此类推。
+const int g_FUObjectItem_Object_offset = 0; // 以此类推。
+
+
+const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
 
 // 4.22的一些define
 const int ElementsPerChunk = 0x4000;
@@ -104,11 +108,31 @@ int get_num_elememts()
 	return res;
 }
 
+// 根据object的id获取其地址。
+ULONG64 get_uobject_addr_by_id(ULONG64 TUObjectArray_addr, ULONG64 id)
+{
+	int i = 0;
+	for (; id > 65536; i++)
+	{
+		id -= 65536;
+	}
+
+	ULONG64 chunks = read8(TUObjectArray_addr + i * 8);
+	ULONG64 item = read8(chunks) + g_FUObjectItem_Size * id;
+
+	return read8(item + g_FUObjectItem_Object_offset);
+}
+
 void 测试()
 {
 	init();
 
-	cout << get_num_elememts();
+	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
+	for (int i = 0; i < get_num_elememts(); i++)
+	{
+		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
+		cout << hex << cur_uobject_addr << endl;
+	}
 }
 
 int main()
