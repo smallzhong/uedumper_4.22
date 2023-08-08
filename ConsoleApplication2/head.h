@@ -11,6 +11,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <limits.h>
 #include <map>
 #include <string>
 #include <time.h>

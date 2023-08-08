@@ -149,7 +149,7 @@ void dump_objects()
 		if (!cur_uobject_addr)
 			continue;
 		string fullName = get_object_fullname(cur_uobject_addr);
-		objects.fprintf("[%05d] %s\n", i, fullName.c_str());
+		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, fullName.c_str());
 	}
 }
 
