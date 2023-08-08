@@ -1,20 +1,35 @@
 ﻿// ConsoleApplication2.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-#include <iostream>
+#include "head.h"
+
+const int g_base = 0x7FF63F4A0000;
+const int g_gname_offset = 0x2E6E0C0;
+const int g_GUObjectArray_offset = 0x2B8CA60;
+
+DWORD g_pid = 0;
+HANDLE g_hDevice = NULL;
+
+
+void 初始化驱动()
+{
+	g_hDevice = CreateFileA("\\\\.\\C1ACDA339ED015753289D8DC63CF2A83", GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_SYSTEM, 0);
+	MY_ASSERT(g_hDevice != INVALID_HANDLE_VALUE);
+}
+
+void init()
+{
+	HWND hWnd = FindWindowA("UnrealWindow", NULL);
+	if (!hWnd)
+		EXIT_ERROR("窗口句柄获取失败,未找到UE窗口");
+	GetWindowThreadProcessId(hWnd, &g_pid);
+	if (!g_pid)
+		EXIT_ERROR("获取Processid失败");
+	初始化驱动();
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	init();
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
