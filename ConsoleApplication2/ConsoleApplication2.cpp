@@ -132,7 +132,7 @@ ULONG64 get_uobject_addr_by_id(ULONG64 TUObjectArray_addr, ULONG64 id)
 //
 //}
 
-string get_object_fullname(ULONG64 uobject_addr)
+string get_object_name(ULONG64 uobject_addr)
 {
 	ULONG32 NameId = read4(uobject_addr + g_UObject_Name_offset);
 	return get_name(NameId);
@@ -148,7 +148,7 @@ void dump_objects()
 		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
 		if (!cur_uobject_addr)
 			continue;
-		string fullName = get_object_fullname(cur_uobject_addr);
+		string fullName = get_object_name(cur_uobject_addr);
 		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, fullName.c_str());
 	}
 }
