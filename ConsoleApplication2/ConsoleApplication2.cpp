@@ -15,6 +15,11 @@ const int g_UObject_Name_offset = 0x18; // 以此类推。
 const int g_UObject_Class_offset = 0x10; // 以此类推。
 const int g_UObject_Outer_offset = 0x20; // 以此类推。
 
+const int g_UStruct_SuperStruct_offset = 0x40; // 以此类推。
+const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
+const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
+
+
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
 
@@ -101,7 +106,7 @@ string get_name(uint32_t Index)
 }
 
 // 获取gobjectarray里面有多少个element
-int get_num_elememts()
+int get_object_num_elememts()
 {
 	static int res = 0;
 	if (res != 0)
@@ -127,10 +132,93 @@ ULONG64 get_uobject_addr_by_id(ULONG64 TUObjectArray_addr, ULONG64 id)
 	return read8(item + g_FUObjectItem_Object_offset);
 }
 
-//ULONG64 FindObject(string fullName)
-//{
-//
-//}
+ULONG64 get_struct_super(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UStruct_SuperStruct_offset);
+}
+
+ULONG64 get_UObject_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/CoreUObject.Object");
+	return res;
+}
+
+ULONG64 get_AActor_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/Engine.Actor");
+	return res;
+}
+
+ULONG64 get_UEnum_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/CoreUObject.Enum");
+	return res;
+}
+
+ULONG64 get_UClass_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/CoreUObject.Class");
+	return res;
+}
+
+ULONG64 get_UFunction_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/CoreUObject.Function");
+	return res;
+}
+
+ULONG64 get_UScriptStruct_staticClass(ULONG64 TUObjectArray_addr)
+{
+	static ULONG64 res = 0;
+	if (res != 0)
+	{
+		return res;
+	}
+	res = FindObject(TUObjectArray_addr, "Class\t/Script/CoreUObject.ScriptStruct");
+	return res;
+}
+
+
+
+ULONG64 FindObject(ULONG64 TUObjectArray_addr, string fullName)
+{
+	for (int i = 0; i < get_object_num_elememts(); i++)
+	{
+		ULONG64 cur_object = get_uobject_addr_by_id(TUObjectArray_addr, i);
+		string t_fullname = get_object_fullName(cur_object);
+		if (cur_object && t_fullname == fullName)
+		{
+			return cur_object;
+		}
+	}
+
+	return NULL;
+}
 
 ULONG64 get_object_outer(ULONG64 uobject_addr)
 {
@@ -168,11 +256,26 @@ void dump_objects()
 	File objects("objects.txt");
 
 	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
-	for (int i = 0; i < get_num_elememts(); i++)
+
+	cout << get_UObject_staticClass(TUObjectArray_addr) << endl;
+	cout << get_AActor_staticClass(TUObjectArray_addr) << endl;
+	cout << get_UEnum_staticClass(TUObjectArray_addr) << endl;
+	cout << get_UClass_staticClass(TUObjectArray_addr) << endl;
+	cout << get_UFunction_staticClass(TUObjectArray_addr) << endl;
+	cout << get_UScriptStruct_staticClass(TUObjectArray_addr) << endl;
+
+	return;
+
+	for (int i = 0; i < get_object_num_elememts(); i++)
 	{
 		ULONG64 cur_uobject_addr = get_uobject_addr_by_id(TUObjectArray_addr, i);
 		if (!cur_uobject_addr)
 			continue;
+
+
+
+
+
 		string name = get_object_fullName(cur_uobject_addr);
 		objects.fprintf("[%017llx] %s\n", cur_uobject_addr, name.c_str());
 	}
@@ -183,7 +286,7 @@ void 测试()
 	init();
 	dump_objects();
 
-
+	
 
 }
 
