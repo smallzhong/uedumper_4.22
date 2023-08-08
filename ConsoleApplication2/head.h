@@ -51,3 +51,10 @@ typedef struct _UserData
 }UserData, * PUserData;
 
 #define READ	CTL_CODE(FILE_DEVICE_UNKNOWN,3333,METHOD_BUFFERED,FILE_ANY_ACCESS)
+
+
+void ³õÊ¼»¯Çý¶¯();
+bool ReadMemory(ULONG64 Addr, void* buf, int size);
+void init();
+ULONG32 read4(PVOID addr);
+ULONG64 read8(PVOID addr);
