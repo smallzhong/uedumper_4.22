@@ -241,6 +241,26 @@ string get_object_name(ULONG64 uobject_addr)
 	return get_name(NameId);
 }
 
+string get_object_cppname(ULONG64 uobject_addr)
+{
+	string Name = get_object_name(uobject_addr);
+	if (Name == "" || Name == "None")
+		return string();
+
+	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
+	for (int i = uobject_addr; i; i = get_struct_super(i))
+	{
+		if (i > g_base)
+			break;
+		if (IsA_AActor(TUObjectArray_addr, i))
+			return "A" + Name;
+		else if (IsA_UObject(TUObjectArray_addr, i))
+			return "U" + Name;
+	}
+
+	return "F" + Name;
+}
+
 string get_object_fullName(ULONG64 uobject_addr)
 {
 	string temp = get_object_name(uobject_addr);
@@ -361,8 +381,7 @@ void dump_UFunction(ULONG64 uobject_addr)
 	MY_ASSERT(func_offset); // TODO: 这里不一定，看别人的代码里面是return，但我觉得如果是0说明出错了
 
 	// TODO: 名字中有__Delegate应返回，这里不返回。
-
-	cout << FullName << endl;
+	string FuncName = get_object_cppname(get_object_outer(uobject_addr)) + "::" + get_object_name(uobject_addr);
 
 	string body = "";
 	for (ULONG64 i = get_struct_children(uobject_addr); i; i = get_field_next(i))
@@ -371,18 +390,15 @@ void dump_UFunction(ULONG64 uobject_addr)
 		string klass = get_object_name(get_object_class(i));
 
 		string retValue = "void ";
-		
-		cout << "\t" << klass << " " << name << endl;
 
 		if ("ReturnValue" == name)
 		{
 			retValue = klass;
-			printf("retvalue = %s\n", klass.c_str());
 		}
 
 		body += klass + " " + name  + " ";
 
-		ufunction_logger.fprintf("%s// Offset::0x%X;\n%s %s(%s)\n\n",FullName.c_str(), func_offset, retValue.c_str(), "跟上面一样", body.c_str());
+		ufunction_logger.fprintf("%s// Offset::0x%X;\n%s %s(%s)\n\n", FullName.c_str(), func_offset, retValue.c_str(), FuncName.c_str(), body.c_str());
 	}
 }
 
