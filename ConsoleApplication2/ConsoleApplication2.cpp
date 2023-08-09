@@ -15,11 +15,14 @@ const int g_UObject_Name_offset = 0x18; // 以此类推。
 const int g_UObject_Class_offset = 0x10; // 以此类推。
 const int g_UObject_Outer_offset = 0x20; // 以此类推。
 const int g_UStruct_SuperStruct_offset = 0x40; // 以此类推。
-const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
 const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
 const int g_FNameEntry_AnsiName_or_WideName_offset = 0xc; // 以此类推。
 const int g_UEnum_Names_offset = 0x40; // 以此类推
 const int g_UFunction_Func_offset = 0xC0; // 以此类推
+
+const int g_UStruct_Children_offset = 0x48; // 以此类推
+
+const int g_UField_Next_offset = 0x28; // 以此类推
 
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
@@ -337,16 +340,41 @@ ULONG64 get_function_addr(ULONG64 uobject_addr)
 }
 
 File uenum_logger("enum.txt");
-File ufunction_logger("function.cpp");
+File ufunction_logger("function.txt");
 
+ULONG64 get_struct_children(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UStruct_Children_offset);
+}
+
+ULONG64 get_field_next(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UField_Next_offset);
+}
 
 void dump_UFunction(ULONG64 uobject_addr)
 {
 	string FullName = "//" + get_object_fullName(uobject_addr) + "\n";
 	ULONG64 func_addr = get_function_addr(uobject_addr);
+	ULONG64 func_offset = func_addr - g_base;
 
-	cout << FullName << " " << hex << func_addr << endl;
+	MY_ASSERT(func_offset); // TODO: 这里不一定，看别人的代码里面是return，但我觉得如果是0说明出错了
 
+	// TODO: 名字中有__Delegate应返回，这里不返回。
+	for (ULONG64 i = get_struct_children(uobject_addr); i; i = get_field_next(i))
+	{
+		string name = get_object_name(i);
+		string klass = get_object_name(get_object_class(i));
+		
+		
+		cout << FullName << endl;
+		cout << "\t" << klass << " " << name << endl;
+
+		if ("ReturnValue" == name)
+		{
+			system("pause");
+		}
+	}
 }
 
 void dump_UEnum(ULONG64 uobject_addr)
@@ -424,6 +452,7 @@ void 测试()
 {
 	init();
 	dump_objects();
+	//cout << get_name(65) << endl;
 }
 
 int main()
