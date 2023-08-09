@@ -380,7 +380,7 @@ void dump_UFunction(ULONG64 uobject_addr)
 			printf("retvalue = %s\n", klass.c_str());
 		}
 
-		body += klass + " " + name;
+		body += klass + " " + name  + " ";
 
 		ufunction_logger.fprintf("%s// Offset::0x%X;\n%s %s(%s)\n\n",FullName.c_str(), func_offset, retValue.c_str(), "跟上面一样", body.c_str());
 	}
