@@ -4,7 +4,7 @@
 #include "head.h"
 #include "file.h"
 
-const ULONG64 g_base = 0x7FF616AC0000;
+const ULONG64 g_base = 0x7FF6CCB40000;
 const ULONG64 g_gname_offset = 0x2E6E0C0;
 const ULONG64 g_GUObjectArray_offset = 0x2B8CA60;
 const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下面ObjObjects成员的offset
