@@ -19,6 +19,7 @@ const int g_UStruct_ChildProperties_offset = 0x48; // 以此类推。
 const int g_UStruct_PropertiesSize_offset = 0x50; // 以此类推。
 const int g_FNameEntry_AnsiName_or_WideName_offset = 0xc; // 以此类推。
 const int g_UEnum_Names_offset = 0x40; // 以此类推
+const int g_UFunction_Func_offset = 0xC0; // 以此类推
 
 
 const int g_FUObjectItem_Size = 0x18; // FUObjectItem结构体的大小
@@ -330,12 +331,22 @@ bool IsA_UScriptStruct(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
 	return FALSE;
 }
 
+ULONG64 get_function_addr(ULONG64 uobject_addr)
+{
+	return read8(uobject_addr + g_UFunction_Func_offset);
+}
+
 File uenum_logger("enum.txt");
 File ufunction_logger("function.cpp");
 
-void dump_UFunction(ULONG64 uobject_addr) 
+
+void dump_UFunction(ULONG64 uobject_addr)
 {
-	
+	string FullName = "//" + get_object_fullName(uobject_addr) + "\n";
+	ULONG64 func_addr = get_function_addr(uobject_addr);
+
+	cout << FullName << " " << hex << func_addr << endl;
+
 }
 
 void dump_UEnum(ULONG64 uobject_addr)
