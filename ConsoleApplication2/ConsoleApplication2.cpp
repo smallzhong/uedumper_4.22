@@ -330,7 +330,14 @@ bool IsA_UScriptStruct(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
 	return FALSE;
 }
 
-File enum_logger("enum.txt");
+File uenum_logger("enum.txt");
+File ufunction_logger("function.cpp");
+
+void dump_UFunction(ULONG64 uobject_addr) 
+{
+	
+}
+
 void dump_UEnum(ULONG64 uobject_addr)
 {
 	string FullName = "// " + get_object_fullName(uobject_addr) + "\n";
@@ -357,7 +364,7 @@ void dump_UEnum(ULONG64 uobject_addr)
 	if (Max > 256)
 		Type = "uint32_t";
 
-	enum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "};\n\n");
+	uenum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "};\n\n");
 }
 
 void dump_objects()
@@ -377,14 +384,14 @@ void dump_objects()
 			dump_UEnum(cur_uobject_addr);
 			//objects.fprintf("IsA_UEnum\n");
 		}
+		else if (IsA_UFunction(TUObjectArray_addr, cur_uobject_addr))
+		{
+			dump_UFunction(cur_uobject_addr);
+			//objects.fprintf("IsA_UFunction\n");
+		}
 		else if (IsA_UClass(TUObjectArray_addr, cur_uobject_addr))
 		{
 			objects.fprintf("IsA_UClass\n");
-
-		}
-		else if (IsA_UFunction(TUObjectArray_addr, cur_uobject_addr))
-		{
-			objects.fprintf("IsA_UFunction\n");
 
 		}
 		else if (IsA_UScriptStruct(TUObjectArray_addr, cur_uobject_addr))
