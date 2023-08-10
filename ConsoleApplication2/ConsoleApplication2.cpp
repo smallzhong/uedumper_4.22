@@ -4,7 +4,7 @@
 #include "head.h"
 #include "file.h"
 
-const ULONG64 g_base = 0x7FF6CCB40000;
+const ULONG64 g_base = 0x7FF6142A0000;
 const ULONG64 g_gname_offset = 0x2E6E0C0;
 const ULONG64 g_GUObjectArray_offset = 0x2B8CA60;
 const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下面ObjObjects成员的offset
@@ -431,6 +431,11 @@ void dump_UEnum(ULONG64 uobject_addr)
 	uenum_logger.fprintf(FullName + ClassName + Type + "\n{\n" + Body + "};\n\n");
 }
 
+void dump_UClass(ULONG64 uobject_addr)
+{
+
+}
+
 void dump_objects()
 {
 	File objects("objects.txt");
@@ -448,22 +453,20 @@ void dump_objects()
 			dump_UEnum(cur_uobject_addr);
 			//objects.fprintf("IsA_UEnum\n");
 		}
+		else if (IsA_UClass(TUObjectArray_addr, cur_uobject_addr))
+		{
+			dump_UClass(cur_uobject_addr);
+			//objects.fprintf("IsA_UClass\n");
+		}
 		else if (IsA_UFunction(TUObjectArray_addr, cur_uobject_addr))
 		{
 			dump_UFunction(cur_uobject_addr);
 			//objects.fprintf("IsA_UFunction\n");
 		}
-		else if (IsA_UClass(TUObjectArray_addr, cur_uobject_addr))
-		{
-			objects.fprintf("IsA_UClass\n");
-
-		}
 		else if (IsA_UScriptStruct(TUObjectArray_addr, cur_uobject_addr))
 		{
 			objects.fprintf("IsA_UScriptStruct\n");
 		}
-
-
 
 		string name = get_object_fullName(cur_uobject_addr);
 
