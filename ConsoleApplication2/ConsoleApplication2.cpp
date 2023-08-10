@@ -244,7 +244,6 @@ string get_object_name(ULONG64 uobject_addr)
 string get_object_cppname(ULONG64 uobject_addr)
 {
 	string Name = get_object_name(uobject_addr);
-	cout << Name << endl;
 	if (Name == "" || Name == "None")
 		return string();
 
@@ -443,8 +442,18 @@ void dump_UClass(ULONG64 uobject_addr)
 	string FullName = "// " + get_object_fullName(uobject_addr);
 	uint32_t classSize = get_struct_PropertiesSize(uobject_addr);
 	string ClassName = "class " + get_object_cppname(uobject_addr);
-	
-	uclass_logger.fprintf("%s\n// class size = 0x%04x\n%s\n{\n%s\n}\n\n", FullName.c_str(), classSize, ClassName.c_str(), "身体");
+	string Body = "";
+
+	int pos = 0;
+	ULONG64 superStruct = get_struct_super(uobject_addr);
+	if (superStruct)
+	{
+		pos = get_struct_PropertiesSize(superStruct);
+		ClassName += " : public " + get_object_cppname(superStruct);
+	}
+
+
+	uclass_logger.fprintf("%s\n// class size = 0x%04x\n%s\n{\n%s\n}\n\n", FullName.c_str(), classSize, ClassName.c_str(), Body);
 }
 
 void dump_objects()
