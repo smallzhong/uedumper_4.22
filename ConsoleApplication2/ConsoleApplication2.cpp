@@ -248,7 +248,7 @@ string get_object_cppname(ULONG64 uobject_addr)
 		return string();
 
 	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
-	for (ULONG64  i = uobject_addr; i; i = get_struct_super(i))
+	for (ULONG64 i = uobject_addr; i; i = get_struct_super(i))
 	{
 		if (i > g_base)
 			break;
@@ -402,7 +402,7 @@ void dump_UFunction(ULONG64 uobject_addr)
 			retValue = klass;
 		}
 
-		body += klass + " " + name  + " ";
+		body += klass + " " + name + " ";
 
 		ufunction_logger.fprintf("%s// Offset::0x%X;\n%s %s(%s)\n\n", FullName.c_str(), func_offset, retValue.c_str(), FuncName.c_str(), body.c_str());
 	}
@@ -442,7 +442,6 @@ void dump_UClass(ULONG64 uobject_addr)
 	string FullName = "// " + get_object_fullName(uobject_addr);
 	uint32_t classSize = get_struct_PropertiesSize(uobject_addr);
 	string ClassName = "class " + get_object_cppname(uobject_addr);
-	string Body = "";
 
 	int pos = 0;
 	ULONG64 superStruct = get_struct_super(uobject_addr);
@@ -452,8 +451,14 @@ void dump_UClass(ULONG64 uobject_addr)
 		ClassName += " : public " + get_object_cppname(superStruct);
 	}
 
+	string Body = "";
+	for (ULONG64 i = get_struct_children(uobject_addr); i; i = get_field_next(i))
+	{
+		string name = "\t" + get_object_name(get_object_class(i)) + " " + get_object_name(i) + ";";
+		Body += name + "\n";
+	}
 
-	uclass_logger.fprintf("%s\n// class size = 0x%04x\n%s\n{\n%s\n}\n\n", FullName.c_str(), classSize, ClassName.c_str(), Body);
+	uclass_logger.fprintf("%s\n// class size = 0x%04x\n%s\n{\n%s\n}\n\n", FullName.c_str(), classSize, ClassName.c_str(), Body.c_str());
 }
 
 void dump_objects()
