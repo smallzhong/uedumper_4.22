@@ -244,11 +244,12 @@ string get_object_name(ULONG64 uobject_addr)
 string get_object_cppname(ULONG64 uobject_addr)
 {
 	string Name = get_object_name(uobject_addr);
+	cout << Name << endl;
 	if (Name == "" || Name == "None")
 		return string();
 
 	ULONG64 TUObjectArray_addr = g_base + g_GUObjectArray_offset + g_FUObjectArray_ObjObjects_offset;
-	for (int i = uobject_addr; i; i = get_struct_super(i))
+	for (ULONG64  i = uobject_addr; i; i = get_struct_super(i))
 	{
 		if (i > g_base)
 			break;
@@ -273,6 +274,11 @@ string get_object_fullName(ULONG64 uobject_addr)
 	}
 
 	return get_object_name(get_object_class(uobject_addr)) + "\t" + temp;
+}
+
+ULONG32 get_struct_PropertiesSize(ULONG64 uobject_addr)
+{
+	return read4(uobject_addr + g_UStruct_PropertiesSize_offset);
 }
 
 bool IsA_UObject(ULONG64 TUObjectArray_addr, ULONG64 uobject_addr)
@@ -361,6 +367,7 @@ ULONG64 get_function_addr(ULONG64 uobject_addr)
 
 File uenum_logger("enum.txt");
 File ufunction_logger("function.txt");
+File uclass_logger("class.txt");
 
 ULONG64 get_struct_children(ULONG64 uobject_addr)
 {
@@ -433,7 +440,11 @@ void dump_UEnum(ULONG64 uobject_addr)
 
 void dump_UClass(ULONG64 uobject_addr)
 {
-
+	string FullName = "// " + get_object_fullName(uobject_addr);
+	uint32_t classSize = get_struct_PropertiesSize(uobject_addr);
+	string ClassName = "class " + get_object_cppname(uobject_addr);
+	
+	uclass_logger.fprintf("%s\n// class size = 0x%04x\n%s\n{\n%s\n}\n\n", FullName.c_str(), classSize, ClassName.c_str(), "身体");
 }
 
 void dump_objects()
