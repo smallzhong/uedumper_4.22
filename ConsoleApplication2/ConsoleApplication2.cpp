@@ -7,6 +7,7 @@
 const ULONG64 g_base = 0x7FF6142A0000;
 const ULONG64 g_gname_offset = 0x2E6E0C0;
 const ULONG64 g_GUObjectArray_offset = 0x2B8CA60;
+const ULONG64 g_UWorld_offset = 0x2F71060;
 const int g_FUObjectArray_ObjObjects_offset = 0x10; // FUObjectArray结构体下面ObjObjects成员的offset
 const int g_TUObjectArray_NumElements_offset = 0x14; // 以此类推。
 const int g_TUObjectArray_NumChunks_offset = 0x1c; // 以此类推。
